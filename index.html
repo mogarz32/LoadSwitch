@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Parallel Music Switcher</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h2>The Switcher</h2>
+  
+  <div class="container">
+    <div class="wrapper">
+      <div class="inner"><form>Calm<br><input type="url" name="link1"></form><div id="player1"></div></div>
+      <div class="inner"><button class="play" id="play" onclick="play()"><i class="fa fa-play"></i></button><br><label class="switch"><input type="checkbox" id="toggle" onclick="check()"><span class="slider round"></span></label></div>
+        <div class="inner"><form>Ablaze<br><input type="url" name="link2"></form><div id="player2"></div></div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>
