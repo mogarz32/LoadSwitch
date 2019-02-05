@@ -43,10 +43,13 @@ function onYouTubeIframeAPIReady() {
 // 3. The API will call this function when the video player is ready.
 function onPlayer1Ready(event) {
   event.target.seekTo(0, false);
+  player1.pauseVideo();
 }
 
 function onPlayer2Ready(event) {
   event.target.seekTo(0, false);
+  player2.mute();
+  player2.pauseVideo();
 }
 
 // 4. The API calls this function when the player's state changes.
@@ -64,33 +67,36 @@ player1.unMute();
 player2.mute();
 
 function play() {
-  check();
   if(player1.getPlayerState() == 1 || player2.getPlayerState() == 5) {
-    //changeIcon();
     player1.pauseVideo();
     player2.pauseVideo();
+    playIcon();
   } else {
-    //changeIcon();
     player1.playVideo();
     player2.playVideo();
+    pauseIcon();
   }
 }
 
-function changeIcon() {
-  $("#play i").toggleClass("fa\ fa-pause fa\ fa-play");
+function playIcon() {
+	document.getElementById('img').src = 'assets/play-button.png';
+}
 
-    console.log("playButton pressed play was "+play);
-
-    play = !play;
+function pauseIcon() {
+	document.getElementById('img').src = 'assets/pause-button.png';
 }
 
 function check() {
-  if(document.getElementById("toggle").checked == false) {
+  if(document.getElementById('toggle').checked == false) {
     player1.unMute();
     player2.mute();
+    document.getElementById('play').className = 'play';
+    document.getElementById('img').className = 'img';
   } else {
     player2.unMute();
     player1.mute();
+    document.getElementById('play').className = 'play2';
+    document.getElementById('img').className = 'img2';
   }
 }
 
