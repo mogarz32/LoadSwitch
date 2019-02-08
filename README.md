@@ -2,15 +2,15 @@
 
 To Do:
 
-~* Embed 2 YouTube video players.~
+* ~Embed 2 YouTube video players.~
 
-~* Create external play button that plays both videos at the same time.~
+* ~Create external play button that plays both videos at the same time.~
 
-~* Create toggle that mutes one tracks/unmutes the other.~
+* ~Create toggle that mutes one tracks/unmutes the other.~
 
-~* Enable both player controls.~
+* ~Enable both player controls.~
 
-~* Read URLs inserted into text boxes and load videos into players.~
+* ~Read URLs inserted into text boxes and load videos into players.~
 
 * Create dropdown menu with Fire Emblem tracks for selection. Tracks populate in left and right boxes when selected.
 
