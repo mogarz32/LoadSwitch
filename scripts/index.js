@@ -11,13 +11,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 function onYouTubeIframeAPIReady() {
   player1 = new YT.Player('player1', {
-    height: '90',
-    width: '110',
+    height: '200',
+    width: '356',
     videoId: 'tw03z6_6bRE',
     playerVars: { 
       'loop': 1,
       'playlist': 'tw03z6_6bRE',
-      'controls': 0,
+      'controls': 1,
     },
     events: {
       'onReady': onPlayer1Ready,
@@ -25,13 +25,13 @@ function onYouTubeIframeAPIReady() {
     }
   });
   player2 = new YT.Player('player2', {
-    height: '90',
-    width: '110',
+    height: '200',
+    width: '356',
     videoId: '4Uuwsy9Tyto',
     playerVars: { 
       'loop': 1,
       'playlist': '4Uuwsy9Tyto',
-      'controls': 0,
+      'controls': 1,
     },
     events: {
       'onReady': onPlayer2Ready,
