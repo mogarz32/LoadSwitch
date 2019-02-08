@@ -14,9 +14,10 @@
   
   <div class="container">
     <div class="wrapper">
-      <div class="inner"><form>Video 1<br><input type="url" id="link1" value="Paste URL here" oninput="loadVideo1()"></form><div id="player1"></div></div>
+      <div class="left-col"><h3>Panel 1</h3><br><p>("1" key = play/pause)</p><br><p>("t" key = toggle videos)</p></div>
+      <div class="inner"><form>Video 1<br><input type="url" id="link1" placeholder="Paste URL here" oninput="loadVideo1()"></form><div id="player1"></div></div>
       <div class="center"><button class="play" id="play" onclick="play()"><img src="assets/play-button.png" height=50px width=50px id="img" class="img"></button><br><label class="switch"><input type="checkbox" id="toggle" onclick="check()"><span class="slider round"></span></label></div>
-        <div class="inner"><form>Video 2<br><input type="url" id="link2" value="Paste URL here" oninput="loadVideo2()"></form><div id="player2"></div></div>
+        <div class="inner"><form>Video 2<br><input type="url" id="link2" placeholder="Paste URL here" oninput="loadVideo2()"></form><div id="player2"></div></div>
     </div>
   </div>
   

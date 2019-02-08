@@ -12,6 +12,8 @@ To Do:
 
 * ~Read URLs inserted into text boxes and load videos into players.~
 
+* ~Add keyboard shortcuts for play/pause and toggling.~
+
 * Create dropdown menu with Fire Emblem tracks for selection. Tracks populate in left and right boxes when selected.
 
 * Introduce fade in/fade out when toggling between players

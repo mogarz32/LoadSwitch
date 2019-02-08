@@ -3,6 +3,19 @@ var player1;
 var player2;
 var tag = document.createElement('script');
 
+document.onkeydown = function(event) {
+  var box = document.getElementById("toggle");
+  
+  if(event.keyCode == 49) {
+    play();
+  }
+  if(event.keyCode == 84) {
+    (box.checked) ? box.checked=false : box.checked=true;
+    check();
+    return true;
+  }
+}
+
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -102,7 +115,7 @@ function check() {
 
 //function reverseColors
 
-function fadeIn() {
+/*function fadeIn() {
   player1.setVolume() = 0;
   var volume = player1.getVolume();
   var id = setInterval(volume, 20);
@@ -128,7 +141,7 @@ function fadeOut() {
       volume = player1.getVolume();
     }
   }
-}
+}*/
 
 // 6. Textfield URL video queueing
 function youtube_parser(url) {
