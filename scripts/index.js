@@ -13,10 +13,10 @@ function onYouTubeIframeAPIReady() {
   player1 = new YT.Player('player1', {
     height: '200',
     width: '356',
-    videoId: 'tw03z6_6bRE',
+    //videoId: 'tw03z6_6bRE',
     playerVars: { 
       'loop': 1,
-      'playlist': 'tw03z6_6bRE',
+      //'playlist': 'tw03z6_6bRE',
       'controls': 1,
     },
     events: {
@@ -27,10 +27,10 @@ function onYouTubeIframeAPIReady() {
   player2 = new YT.Player('player2', {
     height: '200',
     width: '356',
-    videoId: '4Uuwsy9Tyto',
+    //videoId: '4Uuwsy9Tyto',
     playerVars: { 
       'loop': 1,
-      'playlist': '4Uuwsy9Tyto',
+      //'playlist': '4Uuwsy9Tyto',
       'controls': 1,
     },
     events: {
@@ -128,4 +128,25 @@ function fadeOut() {
       volume = player1.getVolume();
     }
   }
+}
+
+// 6. Textfield URL video queueing
+function youtube_parser(url) {
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    return (match&&match[7].length==11)? match[7] : false;
+}
+
+function loadVideo1() {
+  var url = document.getElementById("link1").value
+  var link1ID = youtube_parser(url);
+  player1.loadVideoById(link1ID);
+  player1.pauseVideo();
+}
+
+function loadVideo2() {
+  var url = document.getElementById("link2").value
+  var link2ID = youtube_parser(url);
+  player2.loadVideoById(link2ID);
+  player2.pauseVideo();
 }
