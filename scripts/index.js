@@ -55,12 +55,12 @@ function onYouTubeIframeAPIReady() {
 
 // 3. The API will call this function when the video player is ready.
 function onPlayer1Ready(event) {
-  event.target.seekTo(0, false);
+  event.target.seekTo(0, true);
   player1.pauseVideo();
 }
 
 function onPlayer2Ready(event) {
-  event.target.seekTo(0, false);
+  event.target.seekTo(0, true);
   player2.mute();
   player2.pauseVideo();
 }
