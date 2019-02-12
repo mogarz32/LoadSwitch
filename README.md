@@ -14,10 +14,12 @@ To Do:
 
 * ~Add keyboard shortcuts for play/pause and toggling.~
 
+* Allow users to add up to 4 more panels (2 players with play/pause and toggle buttons).
+
+* Create single, external volume control (max volume for toggled player)
+
 * Create dropdown menu with Fire Emblem tracks for selection. Tracks populate in left and right boxes when selected.
 
 * Introduce fade in/fade out when toggling between players
-
-* Create single, external volume control (max volume for toggled player)
 
 * Allow multiple users into a session
