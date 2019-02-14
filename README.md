@@ -16,10 +16,14 @@ To Do:
 
 * Allow users to add up to 4 more panels (2 players with play/pause and toggle buttons).
 
-* Create single, external volume control (max volume for toggled player)
+* Create a playlist that allows users to load in multiple videos
 
 * Create dropdown menu with Fire Emblem tracks for selection. Tracks populate in left and right boxes when selected.
 
+* Create single, external volume control (max volume for toggled player)
+
 * Introduce fade in/fade out when toggling between players
+
+* Save webpage state for users (user profiles?)
 
 * Allow multiple users into a session
