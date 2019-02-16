@@ -14,6 +14,8 @@ To Do:
 
 * ~Add keyboard shortcuts for play/pause and toggling.~
 
+* Add tooltips to buttons when hovered
+
 * Allow users to add up to 4 more panels (2 players with play/pause and toggle buttons).
 
 * Create a playlist that allows users to load in multiple videos
