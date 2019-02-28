@@ -31,6 +31,7 @@ function onYouTubeIframeAPIReady() {
       'loop': 1,
       //'playlist': 'tw03z6_6bRE',
       'controls': 1,
+      'disablekb': 1,
     },
     events: {
       'onReady': onPlayer1Ready,
@@ -45,6 +46,7 @@ function onYouTubeIframeAPIReady() {
       'loop': 1,
       //'playlist': '4Uuwsy9Tyto',
       'controls': 1,
+      'disablekb': 1,
     },
     events: {
       'onReady': onPlayer2Ready,
