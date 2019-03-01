@@ -67,14 +67,12 @@ function onPlayer2Ready(event) {
   player2.pauseVideo();
 }
 
-// 4. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for three seconds and then stop.
-//var done = false;
+// 4. 
 function onPlayerStateChange(event) {
-//  if (event.data == YT.PlayerState.PLAYING && done) {
-//    event.seekTo(0, false);
-//  }
+  if (event.data === YT.PlayerState.ENDED) {
+    player1.playVideo();
+    player2.playVideo();
+  }
 }
 
 // 5. Play and Toggle button functions
