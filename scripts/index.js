@@ -16,6 +16,17 @@ document.onkeydown = function(event) {
   }
 }
 
+// Select Menus
+var select = document.getElementById("videoList1");
+var options = ["Chaos - Fire Emblem: Awakening", "Conquest: Fire Emblem: Awakening"];
+for(var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    var el = document.createElement("option");
+    el.textContent = opt;
+    el.value = opt;
+    select.appendChild(el);
+}
+
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -31,7 +42,6 @@ function onYouTubeIframeAPIReady() {
       'loop': 1,
       //'playlist': 'tw03z6_6bRE',
       'controls': 1,
-      'disablekb': 1,
     },
     events: {
       'onReady': onPlayer1Ready,
@@ -46,7 +56,6 @@ function onYouTubeIframeAPIReady() {
       'loop': 1,
       //'playlist': '4Uuwsy9Tyto',
       'controls': 1,
-      'disablekb': 1,
     },
     events: {
       'onReady': onPlayer2Ready,
@@ -113,8 +122,6 @@ function check() {
   }
 }
 
-//function reverseColors
-
 /*function fadeIn() {
   player1.setVolume() = 0;
   var volume = player1.getVolume();
@@ -151,15 +158,17 @@ function youtube_parser(url) {
 }
 
 function loadVideo1() {
-  var url = document.getElementById("link1").value
+  var url = document.getElementById("link1").value;
   var link1ID = youtube_parser(url);
   player1.loadVideoById(link1ID);
+  player1.seekTo(0);
   player1.pauseVideo();
 }
 
 function loadVideo2() {
-  var url = document.getElementById("link2").value
+  var url = document.getElementById("link2").value;
   var link2ID = youtube_parser(url);
   player2.loadVideoById(link2ID);
+  player2.seekTo(0);
   player2.pauseVideo();
 }

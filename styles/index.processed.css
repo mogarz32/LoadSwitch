@@ -1,3 +1,20 @@
+.list {
+  width: 360px;
+  height: 20px;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.dropdown {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
 h2 {
   text-align: center;
 }
@@ -10,7 +27,7 @@ input[type=url] {
   width: 360px;
   transform: translate(0, -30%);
   padding: 5px;
-  margin: 8px 0;
+  margin: 8px 0 0 0;
   box-sizing: border-box;
   border: 2px solid black;
   border-radius: 4px;
