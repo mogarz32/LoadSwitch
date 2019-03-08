@@ -18,9 +18,9 @@
   <div class="container">
     <div class="wrapper">
       <div class="inner">
-        <form>Video 1<br><input type="url" id="link1" placeholder="Use Dropdown Menu or Paste URL here" oninput="loadVideo1()"></form>
+        <form>Video 1<br><input type="url" id="link1" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo1()"></form>
         <div class="dropdown">
-          <select id="videoList1" class="list">
+          <select id="videoList1" class="list" onchange="syncMenu1()">
           </select>
         </div>
         <div id="player1">
@@ -37,9 +37,9 @@
       </div>
       
       <div class="inner">
-        <form>Video 2<br><input type="url" id="link2" placeholder="Use Dropdown Menu or Paste URL here" oninput="loadVideo2()"></form>
+        <form>Video 2<br><input type="url" id="link2" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo2()"></form>
         <div class="dropdown">
-          <select id="videoList2" class="list">
+          <select id="videoList2" class="list" onchange="syncMenu2()">
           </select>
         </div>
         <div id="player2">
