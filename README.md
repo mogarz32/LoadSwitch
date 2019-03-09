@@ -20,14 +20,16 @@ To Do:
 
 * ~Add categories to dropdown menus.~
 
+* ~Create single, external volume control (max volume for toggled player).~
+
+* Add text boxes and a dropdown menu that allow users to load a single video into both players.
+
 * Allow users to add up to 4 more panels (2 players with play/pause and toggle buttons).
 
-* Create a playlist that allows users to load in multiple videos
+* Create a playlist that allows users to load in multiple videos.
 
-* Create single, external volume control (max volume for toggled player)
+* Introduce fade in/fade out when toggling between players.
 
-* Introduce fade in/fade out when toggling between players
+* Save webpage state for users (user profiles?).
 
-* Save webpage state for users (user profiles?)
-
-* Allow multiple users into a session
+* Allow multiple users into a session.

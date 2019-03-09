@@ -81,7 +81,7 @@
 
 h3 {
   text-align: center;
-  transform: translate(0, -75%);
+  transform: translate(0, -180%);
   text-decoration: underline;
 }
 
@@ -211,7 +211,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
-  transform: translate(0, -75%);
+  transform: translate(0, 10%);
 }
 
 /* Hide default HTML checkbox */
