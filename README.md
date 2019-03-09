@@ -18,7 +18,7 @@ To Do:
 
 *  ~Create dropdown menu with Fire Emblem tracks for selection. Tracks populate in left and right boxes when selected.~
 
-* Add nesting to dropdown menus.
+* ~Add categories to dropdown menus.~
 
 * Allow users to add up to 4 more panels (2 players with play/pause and toggle buttons).
 
