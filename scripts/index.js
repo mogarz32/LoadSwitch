@@ -438,10 +438,6 @@ var darkestBattle = [
 	{
 		title: "Weald Combat",
 		url: "https://youtu.be/sPREO8Tab9Q"
-	},
-	{
-		title: "Final Combat",
-		url: "https://youtu.be/gJnziEdus_Q"
 	}
 ];
 
@@ -461,10 +457,17 @@ var darkestAmbush = [
 	{
 		title: "Weald Ambush",
 		url: "https://youtu.be/oR7rpJS3fAk"
+	}
+];
+
+var darkestSingles = [
+	{
+		title: "Dark Mitochondria (Color of Madness)",
+		url: "https://youtu.be/nnZktHc3uI0"
 	},
 	{
-		title: "Final Combat",
-		url: "https://youtu.be/gJnziEdus_Q"
+		title: "The Senescence (Color of Madness)",
+		url: "https://youtu.be/pMyRE_sQA-Q"
 	}
 ];
 
@@ -548,6 +551,14 @@ for(var i = 0; i < darkestAmbush.length; i++) {
 	darkestAmbushFolder.appendChild(el);
 }
 
+var darkestSinglesFolder = document.getElementById("darkestSingles");
+for(var i = 0; i < darkestSingles.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestSingles[i].title;
+	el.value = darkestSingles[i].url;
+	darkestSinglesFolder.appendChild(el);
+}
+
 // Sync Menu Selections
 function syncMenu1() {
 	var selection = document.getElementById("videoList1").selectedIndex;
@@ -625,6 +636,21 @@ function syncMenu2() {
 	document.getElementById("videoList2").blur();
 }
 
+function syncPlayers() {
+	var selection = document.getElementById("dualVideoList").selectedIndex;
+	var linkID = youtube_parser(darkestSingles[selection - 1].url);
+    player1.loadVideoById(linkID);
+    player2.loadVideoById(linkID);
+
+    player1.seekTo(0);
+	player1.pauseVideo();
+	player2.seekTo(0);
+	player2.pauseVideo();
+	playIcon();
+
+	document.getElementById("dualVideoList").blur();
+}
+
 // Play and Toggle button functions
 function play() {
   if(player1.getPlayerState() == 1 || player2.getPlayerState() == 5) {
@@ -689,6 +715,19 @@ function loadVideo2() {
   player2.pauseVideo();
   playIcon();
   document.getElementById("link2").blur();
+}
+
+function loadDualVideos() {
+	var url = document.getElementById("dualLink").value;
+	var linkID = youtube_parser(url);
+	player1.loadVideoById(linkID);
+	player2.loadVideoById(linkID);
+	player1.seekTo(0);
+	player1.pauseVideo();
+	player2.seekTo(0);
+	player2.pauseVideo();
+	playIcon();
+	document.getElementById("dualLink").blur();
 }
 
 // Volume Slider

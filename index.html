@@ -18,7 +18,7 @@
   <div class="container">
     <div class="wrapper">
       <div class="inner">
-        <form>Video 1<br><input type="url" id="link1" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo1()"></form>
+        <form>Video 1<br><input type="url" class="singleLink" id="link1" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo1()"></form>
         <div class="dropdown">
           <select id="videoList1" class="list" onchange="syncMenu1()">
             <optgroup label="Fire Emblem: Awakening" id="awakening"></optgroup>
@@ -32,9 +32,11 @@
 
       <div class="center">
         <h3>Panel 1</h3>
-        <br>
-        <br>
-        <br>
+        <form><input type="url" class="dualLink" id="dualLink" placeholder="Load URL into Both Players" oninput="loadDualVideos()"></form>
+        <select id="dualVideoList" class="dualList" onchange="syncPlayers()">
+            <option disabled selected value>--Dual Player Loader Dropdown--</option>
+            <optgroup label="Darkest Dungeon" id="darkestSingles"></optgroup>
+        </select>
         <br>
         <br>
         <button title="Play/Pause (or hit 1)" class="play" id="play" onclick="play()"><img src="assets/play-button.png" height=50px width=50px id="img" class="img"></button>
@@ -51,7 +53,7 @@
       </div>
       
       <div class="inner">
-        <form>Video 2<br><input type="url" id="link2" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo2()"></form>
+        <form>Video 2<br><input type="url" class="singleLink" id="link2" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo2()"></form>
         <div class="dropdown">
           <select id="videoList2" class="list" onchange="syncMenu2()">
             <optgroup label="Fire Emblem: Awakening" id="awakeningAblaze"></optgroup>
