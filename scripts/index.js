@@ -1,13 +1,44 @@
 document.onkeydown = function(event) {
-  var box = document.getElementById("toggle");
-  
+  // 1 key = play/pause
   if(event.keyCode == 49) {
     play();
   }
+
+  // t key = toggle
   if(event.keyCode == 84) {
+  	var box = document.getElementById("toggle");
+
     (box.checked) ? box.checked=false : box.checked=true;
     check();
     return true;
+  }
+
+  // left arrow = decrease volume
+  if(event.keyCode == 37) {
+  	var volume = player1.getVolume();
+  	document.getElementById("volume").value = volume;
+
+  	if(volume >= 5) {
+	    changeVolume(volume - 5);
+	    document.getElementById("volume").value = volume - 5;
+	} else {
+	  	changeVolume(0);
+	  	document.getElementById("volume").value = 0;
+	  }
+  }
+  
+  // right arrow = increase volume
+  if(event.keyCode == 39) {
+  	var volume = player1.getVolume();
+  	document.getElementById("volume").value = volume;
+
+    if(volume >= 95) {
+	  	changeVolume(100);
+	  	document.getElementById("volume").value = 100;
+	} else {
+	  	changeVolume(volume + 5);
+	    document.getElementById("volume").value = volume + 5;
+	}
   }
 }
 
