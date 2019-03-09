@@ -11,6 +11,68 @@ document.onkeydown = function(event) {
   }
 }
 
+// 1. This code loads the IFrame Player API code asynchronously.
+var player1;
+var player2;
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 2. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+function onYouTubeIframeAPIReady() {
+  player1 = new YT.Player('player1', {
+    height: '200',
+    width: '356',
+    videoId: '9K9y1cKVMIU',
+    playerVars: {
+      'loop': 1,
+      'controls': 1,
+    },
+    events: {
+      'onReady': onPlayer1Ready,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+  player2 = new YT.Player('player2', {
+    height: '200',
+    width: '356',
+    videoId: 'XRK3fyYAB4E',
+    playerVars: { 
+      'loop': 1,
+      'controls': 1,
+    },
+    events: {
+      'onReady': onPlayer2Ready,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+// 3. The API will call this function when the video player is ready.
+function onPlayer1Ready(event) {
+  event.target.seekTo(0, true);
+  player1.pauseVideo();
+  player1.setVolume(42);
+}
+
+function onPlayer2Ready(event) {
+  event.target.seekTo(0, true);
+  player2.setVolume(42);
+  player2.mute();
+  player2.pauseVideo();
+}
+
+// 4. Loop video when it ends
+function onPlayerStateChange(event) {
+  if (event.data === YT.PlayerState.ENDED) {
+    player1.playVideo();
+    player2.playVideo();
+  }
+}
+
 // Submenus
 var awakening = [
 	{
@@ -519,6 +581,7 @@ function syncMenu1() {
 	    player2.mute();
 	    document.getElementById('play').className = 'play';
 	    document.getElementById('img').className = 'img';
+	    document.getElementById('volume').className = 'volume';
 	}
 
 	document.getElementById("videoList1").blur();
@@ -556,75 +619,13 @@ function syncMenu2() {
 	    player2.unMute();
 	    document.getElementById('play').className = 'play2';
 	    document.getElementById('img').className = 'img2';
+	    document.getElementById('volume').className = 'volume2';
 	}
 
 	document.getElementById("videoList2").blur();
 }
 
-// 1. This code loads the IFrame Player API code asynchronously.
-var player1;
-var player2;
-var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// 2. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-function onYouTubeIframeAPIReady() {
-  player1 = new YT.Player('player1', {
-    height: '200',
-    width: '356',
-    videoId: '9K9y1cKVMIU',
-    playerVars: {
-      'loop': 1,
-      'controls': 1,
-    },
-    events: {
-      'onReady': onPlayer1Ready,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-  player2 = new YT.Player('player2', {
-    height: '200',
-    width: '356',
-    videoId: 'XRK3fyYAB4E',
-    playerVars: { 
-      'loop': 1,
-      'controls': 1,
-    },
-    events: {
-      'onReady': onPlayer2Ready,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
-
-// 3. The API will call this function when the video player is ready.
-function onPlayer1Ready(event) {
-  event.target.seekTo(0, true);
-  player1.pauseVideo();
-}
-
-function onPlayer2Ready(event) {
-  event.target.seekTo(0, true);
-  player2.mute();
-  player2.pauseVideo();
-}
-
-// 4. 
-function onPlayerStateChange(event) {
-  if (event.data === YT.PlayerState.ENDED) {
-    player1.playVideo();
-    player2.playVideo();
-  }
-}
-
-// 5. Play and Toggle button functions
-player1.unMute();
-player2.mute();
-
+// Play and Toggle button functions
 function play() {
   if(player1.getPlayerState() == 1 || player2.getPlayerState() == 5) {
     player1.pauseVideo();
@@ -653,43 +654,17 @@ function check() {
     player2.mute();
     document.getElementById('play').className = 'play';
     document.getElementById('img').className = 'img';
+    document.getElementById('volume').className = 'volume';
   } else {
     player2.unMute();
     player1.mute();
     document.getElementById('play').className = 'play2';
     document.getElementById('img').className = 'img2';
+    document.getElementById('volume').className = 'volume2';
   }
 }
 
-/*function fadeIn() {
-  player1.setVolume() = 0;
-  var volume = player1.getVolume();
-  var id = setInterval(volume, 20);
-  function volume() {
-    if(volume == 100) {
-      clearInterval(id);
-    } else {
-      player1.setVolume() = player1.getVolume() + 1;
-      volume = player1.getVolume();
-    }
-  }
-}
-
-function fadeOut() {
-  player1.setVolume() = 100;
-  var volume = player1.getVolume();
-  var id = setInterval(volume, 20);
-  function volume() {
-    if(volume == 0) {
-      clearInterval(id);
-    } else {
-      player1.setVolume() = player1.getVolume() - 1;
-      volume = player1.getVolume();
-    }
-  }
-}*/
-
-// 6. Textfield URL video queueing
+// Textfield URL video queueing
 function youtube_parser(url) {
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var match = url.match(regExp);
@@ -703,6 +678,7 @@ function loadVideo1() {
   player1.seekTo(0);
   player1.pauseVideo();
   playIcon();
+  document.getElementById("link1").blur();
 }
 
 function loadVideo2() {
@@ -712,4 +688,11 @@ function loadVideo2() {
   player2.seekTo(0);
   player2.pauseVideo();
   playIcon();
+  document.getElementById("link2").blur();
+}
+
+// Volume Slider
+function changeVolume(val) {
+	player1.setVolume(val);
+	player2.setVolume(val);
 }

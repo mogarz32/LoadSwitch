@@ -32,11 +32,22 @@
 
       <div class="center">
         <h3>Panel 1</h3>
+        <label title="Toggle Between Videos (or hit t)" class="switch">
+          <input type="checkbox" id="toggle" onclick="check()">
+          <span class="slider round"></span>
+        </label>
+        <br>
+        <br>
+        <br>
+        <br>
         <button title="Play/Pause (or hit 1)" class="play" id="play" onclick="play()"><img src="assets/play-button.png" height=50px width=50px id="img" class="img"></button>
         <br>
-        <label title="Toggle Between Videos (or hit t)" class="switch">
-        <input type="checkbox" id="toggle" onclick="check()">
-        <span class="slider round"></span></label>
+        <br>
+        <br>
+        <br>
+        <div class="volumeContainer">
+          <input title="Dual Volume Control" type="range" min="1" max="100" value="42" id="volume" class="volume" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)">
+        </div>
       </div>
       
       <div class="inner">
