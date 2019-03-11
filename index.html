@@ -23,7 +23,8 @@
           <select id="videoList1" class="list" onchange="syncMenu1()">
             <optgroup label="Fire Emblem: Awakening" id="awakening"></optgroup>
             <optgroup label="Fire Emblem: Fates" id="fates"></optgroup>
-            <optgroup label="Darkest Dungeon" id="darkestBattle"></optgroup>
+            <optgroup label="Darkest Dungeon: Full Light Battle" id="darkestBattle"></optgroup>
+            <optgroup label="Darkest Dungeon: Ambient" id="darkestAmbient"></optgroup>
           </select>
         </div>
         <div id="player1">
@@ -36,6 +37,24 @@
         <select id="dualVideoList" class="dualList" onchange="syncPlayers()">
             <option disabled selected value>--Dual Player Loader Dropdown--</option>
             <optgroup label="Darkest Dungeon" id="darkestSingles"></optgroup>
+            <optgroup label="Darkest Dungeon: The Crimson Court" id="darkestCrimson"></optgroup>
+            <optgroup label="Darkest Dungeon: The Color of Madness" id="darkestColor"></optgroup>
+            <optgroup label="The Witcher 3: Wild Hunt" id="witcher"></optgroup>
+            <optgroup label="The Witcher 3: Hearts of Stone" id="witcherHearts"></optgroup>
+            <optgroup label="The Witcher 3: Blood and Wine" id="witcherBlood"></optgroup>
+            <optgroup label="Attack on Titan" id="attackOnTitan"></optgroup>
+            <optgroup label="World of Warcraft" id="WoW"></optgroup>
+            <optgroup label="Into the Breach" id="intoTheBreach"></optgroup>
+            <optgroup label="Haikyuu" id="haikyuu"></optgroup>
+            <optgroup label="Pokemon" id="pokemon"></optgroup>
+            <optgroup label="My Hero Academia" id="myHero"></optgroup>
+            <optgroup label="Fate/Zero" id="fateZero"></optgroup>
+            <optgroup label="Doom" id="doom"></optgroup>
+            <optgroup label="Naruto" id="naruto"></optgroup>
+            <optgroup label="Journey" id="journey"></optgroup>
+            <optgroup label="Legend of Zelda: The Windwaker" id="windwaker"></optgroup>
+            <optgroup label="Erased" id="erased"></optgroup>
+            <optgroup label="Ambient Sounds" id="ambient"></optgroup>
         </select>
         <br>
         <br>
@@ -48,7 +67,7 @@
         <br>
         <br>
         <div class="volumeContainer">
-          <input title="Dual Volume Control (drag or use left/right arrow keys)" type="range" min="0" max="100" value="42" id="volume" class="volume" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)">
+          <input title="Dual Volume Control (drag or use left/right arrow keys)" type="range" min="0" max="100" value="41" id="volume" class="volume" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)">
         </div>
       </div>
       
@@ -58,7 +77,8 @@
           <select id="videoList2" class="list" onchange="syncMenu2()">
             <optgroup label="Fire Emblem: Awakening" id="awakeningAblaze"></optgroup>
             <optgroup label="Fire Emblem: Fates" id="fatesAblaze"></optgroup>
-            <optgroup label="Darkest Dungeon" id="darkestAmbush"></optgroup>
+            <optgroup label="Darkest Dungeon: Torchless Battle" id="darkestAmbush"></optgroup>
+            <optgroup label="Darkest Dungeon: Ambient Torchless" id="darkestTorchless"></optgroup>
           </select>
         </div>
         <div id="player2">

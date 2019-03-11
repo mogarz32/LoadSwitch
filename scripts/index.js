@@ -61,6 +61,7 @@ function onYouTubeIframeAPIReady() {
     playerVars: {
       'loop': 1,
       'controls': 1,
+      'autoplay': 0
     },
     events: {
       'onReady': onPlayer1Ready,
@@ -74,6 +75,7 @@ function onYouTubeIframeAPIReady() {
     playerVars: { 
       'loop': 1,
       'controls': 1,
+      'autoplay': 0
     },
     events: {
       'onReady': onPlayer2Ready,
@@ -453,6 +455,28 @@ var fatesAblaze = [
 	},
 ];
 
+var darkestAmbient = [
+	{
+		title: "Ruins Ambient",
+		url: "https://youtu.be/iX-eKFWXvG4"
+	},
+	{
+		title: "Warrens Ambient",
+		url: "https://youtu.be/7-OdIYcLHE8"
+	}
+];
+
+var darkestTorchless = [
+	{
+		title: "Ruins Torchless",
+		url: "https://youtu.be/XHEnMwm9L8w"
+	},
+	{
+		title: "Warrens Torchless",
+		url: "https://youtu.be/WMwSh4UswEc"
+	}
+];
+
 var darkestBattle = [
 	{
 		title: "Cove Combat",
@@ -491,16 +515,204 @@ var darkestAmbush = [
 	}
 ];
 
+
+
+// Single Tracks for Center Dropdown
 var darkestSingles = [
 	{
-		title: "Dark Mitochondria (Color of Madness)",
+		title: "Main Theme",
+		url: "https://youtu.be/xjnrYyZqm9M"
+	},
+	{
+		title: "House of Ruin",
+		url: "https://youtu.be/0ZC7CU66g2U"
+	},
+	{
+		title: "Terror and Madness",
+		url: "https://youtu.be/Qn02mFkiWt0"
+	},
+	{
+		title: "Town in Chaos",
+		url: "https://youtu.be/2zx2FU6X65s"
+	},
+	{
+		title: "The Hamlet",
+		url: "https://youtu.be/_QXpj7g5gio"
+	},
+	{
+		title: "A Brief Respite (Camp Theme)",
+		url: "https://youtu.be/uLGIyx8mtxM"
+	},
+	{
+		title: "Weald Ambient",
+		url: "https://youtu.be/3bMAF_C1rbA"
+	},	
+	{
+		title: "Siren Battle",
+		url: "https://youtu.be/6d8JWq0N-r4"
+	},
+	{
+		title: "Return to the Warrens",
+		url: "https://youtu.be/tnU7zf9YVoA"
+	},	
+	{
+		title: "The Final Combat",
+		url: "https://youtu.be/CsW72KIOd8U"
+	}
+];
+
+var darkestCrimson = [
+	{
+		title: "Bloodletting",
+		url: "https://youtu.be/z6wq0_wpShM"
+	}
+];
+
+var darkestColor = [
+	{
+		title: "The Blasted Heath",
+		url: "https://youtu.be/SzJYa9Z15-I"
+	},
+	{
+		title: "Dark Mitochondria",
 		url: "https://youtu.be/nnZktHc3uI0"
 	},
 	{
-		title: "The Senescence (Color of Madness)",
+		title: "The Senescence",
 		url: "https://youtu.be/pMyRE_sQA-Q"
+	},
+	{
+		title: "The Chloroplast of Cosmarium",
+		url: "https://youtu.be/-3slUbcvS4U",
+	},
+	{
+		title: "All Things Must Come",
+		url: "https://youtu.be/usIK3yMjPTc",
 	}
 ];
+
+var witcher = [];
+var witcherHearts = [];
+var witcherBlood = [];
+var attackOnTitan = [];
+var WoW = [];
+
+var intoTheBreach = [
+	{
+		title: "Open a Breach",
+		url: "https://youtu.be/Z6ypNVvwEPM",
+	},
+	{
+		title: "Old Earth",
+		url: "https://youtu.be/dxC4Vh8TbkM",
+	},
+	{
+		title: "Antiquity Row",
+		url: "https://youtu.be/OKACob95AKc",
+	},
+	{
+		title: "Old War Machines",
+		url: "https://youtu.be/gYfqH97b-sY",
+	},
+	{
+		title: "Relics",
+		url: "https://youtu.be/xoY-ohE764M",
+	},
+	{
+		title: "Seismic Activity",
+		url: "https://youtu.be/8FlVr9JIsZI",
+	},
+	{
+		title: "Region Secured",
+		url: "https://youtu.be/GmdZ9fPPZGw",
+	},
+	{
+		title: "Red Sands",
+		url: "https://youtu.be/z8W68dP6AmU",
+	},
+	{
+		title: "Rusting Hulks",
+		url: "https://youtu.be/ltpHWc4RRf0",
+	},
+	{
+		title: "The Blast Garden",
+		url: "https://youtu.be/3BSdUgmgn84",
+	},
+	{
+		title: "Cataclysm",
+		url: "https://youtu.be/piR8gnk5wjc",
+	},
+	{
+		title: "Brood Mother",
+		url: "https://youtu.be/NozmvCBwvpo",
+	},
+	{
+		title: "Zenith",
+		url: "https://youtu.be/8aBf0nit2kk",
+	},
+	{
+		title: "Blitzkrieg",
+		url: "https://youtu.be/777Mgil6wRM",
+	},
+	{
+		title: "Pinnacle Robotics",
+		url: "https://youtu.be/hyg9QNi4Ngg",
+	},
+	{
+		title: "Rift Riders",
+		url: "https://youtu.be/8S0GcxBWYPs",
+	},
+	{
+		title: "Frozen Death",
+		url: "https://youtu.be/0es5zF0xSeM",
+	},
+	{
+		title: "Detritus",
+		url: "https://youtu.be/REt3OmAoZeM",
+	},
+	{
+		title: "The Wasteland",
+		url: "https://youtu.be/MparVWizOvE",
+	},
+	{
+		title: "Reprocessing",
+		url: "https://youtu.be/v5joIgM-IbY",
+	},
+	{
+		title: "A.C.I.D.",
+		url: "https://youtu.be/OdnO9c8zaq0",
+	},
+	{
+		title: "Hive Leader",
+		url: "https://youtu.be/6inqFR3SM0Q",
+	},
+	{
+		title: "Apocalypse",
+		url: "https://youtu.be/n9f3lTJZaNk",
+	},
+	{
+		title: "Into the Breach",
+		url: "https://youtu.be/_Wt3r_W29no",
+	},
+	{
+		title: "Don't Forget What I Taught You",
+		url: "https://youtu.be/O_e6_E23-3I",
+	},
+	{
+		title: "Trailer",
+		url: "https://youtu.be/l1gILfL7ZCs",
+	},
+];
+
+var haikyuu = [];
+var pokemon = [];
+var myHero = [];
+var fateZero = [];
+var journey = [];
+var windwaker = [];
+var naruto = [];
+var erased = [];
+
 
 // Dropdown menus
 var leftFolders = [
@@ -513,8 +725,12 @@ var leftFolders = [
 		folder: fates
 	},
 	{
-		name: "Darkest Dungeon",
+		name: "Darkest Dungeon: Full Light Battle",
 		folder: darkestBattle
+	},
+	{
+		name: "Darkest Dungeon: Ambient",
+		folder: darkestAmbient
 	}
 ];
 
@@ -528,26 +744,37 @@ var rightFolders = [
 		folder: fatesAblaze
 	},
 	{
-		name: "Darkest Dungeon",
+		name: "Darkest Dungeon: Torchless Battle",
 		folder: darkestAmbush
+	},
+	{
+		name: "Darkest Dungeon: Torchless Ambient",
+		folder: darkestTorchless
 	}
 ];
 
-// Populate Dropdown Submenus
+var centerFolders = [
+	{
+		name: "Darkest Dungeon",
+		folder: darkestSingles
+	},
+	{
+		name: "Darkest Dungeon: The Crimson Court",
+		folder: darkestCrimson
+	},
+	{
+		name: "Darkest Dungeon: The Color of Madness",
+		folder: darkestColor
+	}
+];
+
+// Populate Left Dropdown Submenus
 var awakeningFolder = document.getElementById("awakening");
 for(var i = 0; i < awakening.length; i++) {
 	var el = document.createElement("option");
 	el.textContent = awakening[i].title;
 	el.value = awakening[i].url;
 	awakeningFolder.appendChild(el);
-}
-
-var awakeningAblazeFolder = document.getElementById("awakeningAblaze");
-for(var i = 0; i < awakeningAblaze.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = awakeningAblaze[i].title;
-	el.value = awakeningAblaze[i].title;
-	awakeningAblazeFolder.appendChild(el);
 }
 
 var fatesFolder = document.getElementById("fates");
@@ -558,20 +785,37 @@ for(var i = 0; i < fates.length; i++) {
 	fatesFolder.appendChild(el);
 }
 
-var fatesAblazeFolder = document.getElementById("fatesAblaze");
-for(var i = 0; i < fatesAblaze.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = fatesAblaze[i].title;
-	el.value = fatesAblaze[i].title;
-	fatesAblazeFolder.appendChild(el);
-}
-
 var darkestBattleFolder = document.getElementById("darkestBattle");
 for(var i = 0; i < darkestBattle.length; i++) {
 	var el = document.createElement("option");
 	el.textContent = darkestBattle[i].title;
 	el.value = darkestBattle[i].url;
 	darkestBattleFolder.appendChild(el);
+}
+
+var darkestAmbientFolder = document.getElementById("darkestAmbient");
+for(var i = 0; i < darkestAmbient.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestAmbient[i].title;
+	el.value = darkestAmbient[i].url;
+	darkestAmbientFolder.appendChild(el);
+}
+
+// Populate Right Dropdown Submenus
+var awakeningAblazeFolder = document.getElementById("awakeningAblaze");
+for(var i = 0; i < awakeningAblaze.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = awakeningAblaze[i].title;
+	el.value = awakeningAblaze[i].title;
+	awakeningAblazeFolder.appendChild(el);
+}
+
+var fatesAblazeFolder = document.getElementById("fatesAblaze");
+for(var i = 0; i < fatesAblaze.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = fatesAblaze[i].title;
+	el.value = fatesAblaze[i].title;
+	fatesAblazeFolder.appendChild(el);
 }
 
 var darkestAmbushFolder = document.getElementById("darkestAmbush");
@@ -582,12 +826,37 @@ for(var i = 0; i < darkestAmbush.length; i++) {
 	darkestAmbushFolder.appendChild(el);
 }
 
+var darkestTorchlessFolder = document.getElementById("darkestTorchless");
+for(var i = 0; i < darkestTorchless.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestTorchless[i].title;
+	el.value = darkestTorchless[i].url;
+	darkestTorchlessFolder.appendChild(el);
+}
+
+// Populate Center Dropdown Submenus
 var darkestSinglesFolder = document.getElementById("darkestSingles");
 for(var i = 0; i < darkestSingles.length; i++) {
 	var el = document.createElement("option");
 	el.textContent = darkestSingles[i].title;
 	el.value = darkestSingles[i].url;
 	darkestSinglesFolder.appendChild(el);
+}
+
+var darkestCrimsonFolder = document.getElementById("darkestCrimson");
+for(var i = 0; i < darkestCrimson.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestCrimson[i].title;
+	el.value = darkestCrimson[i].url;
+	darkestCrimsonFolder.appendChild(el);
+}
+
+var darkestColorFolder = document.getElementById("darkestColor");
+for(var i = 0; i < darkestColor.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestColor[i].title;
+	el.value = darkestColor[i].url;
+	darkestColorFolder.appendChild(el);
 }
 
 // Sync Menu Selections
@@ -601,9 +870,12 @@ function syncMenu1() {
 	} else if(selection < 42) {
 		selection = selection - 13;
 		selectedGroup = 1;
-	} else {
+	} else if(selection < 46) {
 		selection = selection - 42;
 		selectedGroup = 2;
+	} else if(selection < 48) {
+		selection = selection - 46;
+		selectedGroup = 3;
 	}
 
 	var link1ID = youtube_parser(leftFolders[selectedGroup].folder[selection].url);
@@ -639,9 +911,12 @@ function syncMenu2() {
 	} else if(selection < 42) {
 		selection = selection - 13;
 		selectedGroup = 1;
-	} else {
+	} else if(selection < 46) {
 		selection = selection - 42;
 		selectedGroup = 2;
+	} else if(selection < 48) {
+		selection = selection - 46;
+		selectedGroup = 3;
 	}
 	
 	var link1ID = youtube_parser(leftFolders[selectedGroup].folder[selection].url);
@@ -668,8 +943,20 @@ function syncMenu2() {
 }
 
 function syncPlayers() {
-	var selection = document.getElementById("dualVideoList").selectedIndex;
-	var linkID = youtube_parser(darkestSingles[selection - 1].url);
+	var selection = document.getElementById("dualVideoList").selectedIndex - 1;
+
+	var selectedGroup = 0;
+	if(selection < 10) {
+		selectedGroup = 0;
+	} else if(selection < 11) {
+		selection = selection - 10;
+		selectedGroup = 1;
+	} else if(selection < 16) {
+		selection = selection - 11;
+		selectedGroup = 2;
+	}
+
+	var linkID = youtube_parser(centerFolders[selectedGroup].folder[selection].url);
     player1.loadVideoById(linkID);
     player2.loadVideoById(linkID);
 
