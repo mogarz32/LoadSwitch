@@ -765,6 +765,30 @@ var centerFolders = [
 	{
 		name: "Darkest Dungeon: The Color of Madness",
 		folder: darkestColor
+	},
+	{
+		name: "The Witcher 3: Wild Hunt",
+		folder: witcher
+	},
+	{
+		name: "The Witcher 3: Hearts of Stone",
+		folder: witcherHearts
+	},
+	{
+		name: "The Witcher 3: Blood and Wine",
+		folder: witcherBlood
+	},
+	{
+		name: "Attack on Titan",
+		folder: attackOnTitan
+	},
+	{
+		name: "World of Warcraft",
+		folder: WoW
+	},
+	{
+		name: "Into the Breach",
+		folder: intoTheBreach
 	}
 ];
 
@@ -857,6 +881,16 @@ for(var i = 0; i < darkestColor.length; i++) {
 	el.textContent = darkestColor[i].title;
 	el.value = darkestColor[i].url;
 	darkestColorFolder.appendChild(el);
+}
+
+// witcher - others here
+
+var intoTheBreachFolder = document.getElementById("intoTheBreach");
+for(var i = 0; i < intoTheBreach.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = intoTheBreach[i].title;
+	el.value = intoTheBreach[i].url;
+	intoTheBreachFolder.appendChild(el);
 }
 
 // Sync Menu Selections
@@ -954,6 +988,9 @@ function syncPlayers() {
 	} else if(selection < 16) {
 		selection = selection - 11;
 		selectedGroup = 2;
+	} else if(selection < 42) { // Into The Breach
+		selection = selection - 16;
+		selectedGroup = 8;
 	}
 
 	var linkID = youtube_parser(centerFolders[selectedGroup].folder[selection].url);
