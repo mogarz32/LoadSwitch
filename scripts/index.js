@@ -591,9 +591,397 @@ var darkestColor = [
 	}
 ];
 
-var witcher = [];
-var witcherHearts = [];
-var witcherBlood = [];
+var witcher = [
+	{
+		title: "The Trail",
+		url: "https://youtu.be/A5qyrFTJ9WA"
+	},
+	{
+		title: "Geralt of Rivia",
+		url: "https://youtu.be/DKdRDi72Ov8"
+	},
+	{
+		title: "Eredin, King of the Hunt",
+		url: "https://youtu.be/jTKOcx679BA"
+	},
+	{
+		title: "Wake Up, Ciri",
+		url: "https://youtu.be/W7uQmI1dOy4"
+	},
+	{
+		title: "Aen Seidhe",
+		url: "https://youtu.be/yjBN6ObgHiI"
+	},
+	{
+		title: "Commanding the Fury",
+		url: "https://www.youtube.com/watch?v=vq90Bu23uTo&list=PLgJZQv8L8x5n3czufV4KxXuMTls6HKLxB&t=0s&index=7"
+	},
+	{
+		title: "Emhyr var Emreis",
+		url: "https://youtu.be/xL0gDzsjpME"
+	},
+	{
+		title: "Spikeroog",
+		url: "https://youtu.be/5N3n019qCqo"
+	},
+	{
+		title: "King Bran's Final Voyage",
+		url: "https://youtu.be/kA_C5o0W8XA"
+	},
+	{
+		title: "Silver for Monsters",
+		url: "https://youtu.be/MCemYV0LLbg"
+	},
+	{
+		title: "Whispers of Oxenfurt",
+		url: "https://youtu.be/pQBQj-vi5hM"
+	},
+	{
+		title: "The Nightingale",
+		url: "https://youtu.be/f_TT8yiW3xg"
+	},
+	{
+		title: "City of Intrigues",
+		url: "https://youtu.be/qzzX-4KBjoE"
+	},
+	{
+		title: "The Hunter's Path",
+		url: "https://youtu.be/olli46Ixo1Y"
+	},
+	{
+		title: "Widow-Maker",
+		url: "https://youtu.be/j_RAkdDo5rg"
+	},
+	{
+		title: "Kaer Morhen",
+		url: "https://youtu.be/PcArGVAN2G8"
+	},
+	{
+		title: "Eyes of the Wolf",
+		url: "https://youtu.be/T-Ooau22HQg"
+	},
+	{
+		title: "Witch Hunters",
+		url: "https://youtu.be/T3qNIAoALZg"
+	},
+	{
+		title: "Steel for Humans",
+		url: "https://youtu.be/AImQu7pXEf4"
+	},
+	{
+		title: "Fate Calls",
+		url: "https://youtu.be/fcp5pMwjirQ"
+	},
+	{
+		title: "The Vagabond",
+		url: "https://youtu.be/zIOax_vsFKU"
+	},
+	{
+		title: "Cloak and Dagger",
+		url: "https://youtu.be/yUyOT5ENHmk"
+	},
+	{
+		title: "Forged in Fire",
+		url: "https://youtu.be/qOtRxHW_-UE"
+	},
+	{
+		title: "Yes, I Do...",
+		url: "https://youtu.be/Ko1x0CogVa8"
+	},
+	{
+		title: "Welcome, Imlerith",
+		url: "https://youtu.be/ZZMsS_6jUEI"
+	},
+	{
+		title: "Drink Up, There's More!",
+		url: "https://youtu.be/szhz4UHuLjQ"
+	},
+	{
+		title: "After the Storm",
+		url: "https://youtu.be/LgnpL70JbmE"
+	},
+	{
+		title: "Blood on the Cobblestones",
+		url: "https://youtu.be/SJ0QbfcDVz4"
+	},
+	{
+		title: "Farewell, Old Friend",
+		url: "https://youtu.be/sZM92ECPGo4"
+	},
+	{
+		title: "The Song of the Sword-Dancer",
+		url: "https://youtu.be/BZbY2Uzwl68"
+	},
+	{
+		title: "Hunt is Coming",
+		url: "https://youtu.be/-MJ33G0PAGo"
+	},
+	{
+		title: "The Fields of Ard Skellig",
+		url: "https://youtu.be/h0q-cQrlreA"
+	},
+	{
+		title: "Ladies of the Woods",
+		url: "https://youtu.be/ob9F1lsULIA"
+	},
+	{
+		title: "Merchants of Novigrad",
+		url: "https://youtu.be/ADyZzGqwpHU"
+	},
+	{
+		title: "Hunt or Be Hunted",
+		url: "https://youtu.be/PY-BvPriIBo"
+	},
+	{
+		title: "Family Matters",
+		url: "https://youtu.be/Mwrviqb84Eo"
+	},
+	{
+		title: "No Surrender",
+		url: "https://youtu.be/WnSAUYVgVaA"
+	},
+	{
+		title: "Child of the Elder Blood",
+		url: "https://youtu.be/buQwrEt0wo8"
+	},
+	{
+		title: "In the Giant's Shadow",
+		url: "https://youtu.be/sFwwXX-beXQ"
+	},
+	{
+		title: "Nemesis",
+		url: "https://youtu.be/wzLH7ULyeFs"
+	},
+	{
+		title: "Bonnie at Morn Instrumental",
+		url: "https://youtu.be/S6r5zONh-zI"
+	},
+	{
+		title: "At War!",
+		url: "https://youtu.be/2ECMnAtWfAs"
+	},
+	{
+		title: "Back on the Path",
+		url: "https://youtu.be/Xn-5ITFNEjY"
+	},
+	{
+		title: "Words on Wind",
+		url: "https://youtu.be/3Ug2PdOk9t4"
+	},
+	{
+		title: "A Story You Won't Believe",
+		url: "https://youtu.be/xJA61jfPL04"
+	},
+	{
+		title: "When No Man Has Gone Before",
+		url: "https://youtu.be/sVoQCLyOKqY"
+	},
+	{
+		title: "Like A Wounded Animal",
+		url: "https://youtu.be/6Qe7pNvR4bg"
+	},
+	{
+		title: "I Name Thee Dea and Embrace Thee as my Daughter",
+		url: "https://youtu.be/jxfosfpP2bk"
+	},
+	{
+		title: "Igni",
+		url: "https://youtu.be/ZIygNFAKLME"
+	},
+	{
+		title: "The Tree When We Sat Once",
+		url: "https://youtu.be/n4vG1KuLIVY"
+	},
+	{
+		title: "Go for It",
+		url: "https://youtu.be/LKhSDCcNKSE"
+	},
+	{
+		title: "The Wolf and The Swallow",
+		url: "https://youtu.be/lk_4l4qGlzc"
+	},
+	{
+		title: "On Thin Ice",
+		url: "https://youtu.be/RXE-IrDc-qU"
+	},
+	{
+		title: "Trial of the Grasses",
+		url: "https://youtu.be/aMR7_ZMkfgE"
+	},
+	{
+		title: "Hjalmar's Axe",
+		url: "https://youtu.be/gKoN8JTcAGw"
+	},
+	{
+		title: "The Big Four",
+		url: "https://youtu.be/XlVGSOQRK4w"
+	},
+	{
+		title: "The Shrieker Contract",
+		url: "https://youtu.be/IX6ssptCP3s"
+	},
+	{
+		title: "The Possession of Jarl Udalryk",
+		url: "https://youtu.be/NIckcrOAy3o"
+	},
+	{
+		title: "Another Round for Everyone",
+		url: "https://youtu.be/mEwcGYOc_ds"
+	},
+	{
+		title: "Conjunction of the Spheres",
+		url: "https://youtu.be/y_pIaVcQrWM"
+	}
+];
+var witcherHearts = [
+	{
+		title: "Hearts of Stone",
+		url: "https://youtu.be/8G7xiMlLlCo"
+	},
+	{
+		title: "Go Back Whence You Came",
+		url: "https://youtu.be/DeaQHdLhoZk"
+	},
+	{
+		title: "You're Immortal",
+		url: "https://youtu.be/W2QX6Lm4iXE"
+	},
+	{
+		title: "Evil's Soft First Touches",
+		url: "https://youtu.be/NVSyndyhDzk"
+	},
+	{
+		title: "Dead Man's Party",
+		url: "https://youtu.be/BCwJuxT0gEk"
+	},
+	{
+		title: "Mystery Man",
+		url: "https://youtu.be/K2eJj1oydrQ"
+	},
+	{
+		title: "Breaking In",
+		url: "https://youtu.be/7Cgrlanu8FE"
+	},
+	{
+		title: "Whatsoever A Man Soweth",
+		url: "https://youtu.be/oXUD8MINlZs"
+	},
+	{
+		title: "The House of the Borsodis",
+		url: "https://youtu.be/mr3KmDsTRvg"
+	},
+	{
+		title: "The Temple of Lilvani",
+		url: "https://youtu.be/Y5m2692w9-I"
+	},
+	{
+		title: "A Gifted Man Brings Gifts Galore",
+		url: "https://youtu.be/TJyJTn06NZM"
+	}
+];
+var witcherBlood = [
+	{
+		title: "Blood and Wine",
+		url: "https://youtu.be/ACajHb72eV0"
+	},
+	{
+		title: "Fanfares and Flowers",
+		url: "https://youtu.be/SVFmgsg7N1I"
+	},
+	{
+		title: "For Honor! For Toussaint!",
+		url: "https://youtu.be/IE9N5gVbsLk"
+	},
+	{
+		title: "Blood Run",
+		url: "https://youtu.be/AaYrWpNwvEM"
+	},
+	{
+		title: "Seeking Resonance",
+		url: "https://youtu.be/X4WWEyUwqUU"
+	},
+	{
+		title: "I Cannot Let You Leave",
+		url: "https://youtu.be/x1fUxDHAlkw"
+	},
+	{
+		title: "The Banks of the Sansretour",
+		url: "https://youtu.be/X54dEaFF5MU"
+	},
+	{
+		title: "Wine Wars",
+		url: "https://youtu.be/nG2Vuv1MwOI"
+	},
+	{
+		title: "The Musty Scent of Fresh Pate",
+		url: "https://youtu.be/fBFz5AhAjoc"
+	},
+	{
+		title: "Vivienne",
+		url: "https://youtu.be/a0ZZW5bA3aU"
+	},
+	{
+		title: "Titans of Infamy",
+		url: "https://youtu.be/3MU06DABhW0"
+	},
+	{
+		title: "What Lies Unseen",
+		url: "https://youtu.be/BSP44-9sLAM"
+	},
+	{
+		title: "On the Champs-Desoles",
+		url: "https://youtu.be/Ts6jP6lOgBI"
+	},
+	{
+		title: "Beyond Hill and Dale...",
+		url: "https://youtu.be/IQh4Tf7OA84"
+	},
+	{
+		title: "The Moon over Mount Gorgon",
+		url: "https://youtu.be/k7tvroqAWQQ"
+	},
+	{
+		title: "The Mandragora",
+		url: "https://youtu.be/umd-UWHllq4"
+	},
+	{
+		title: "Tesham Mutna",
+		url: "https://youtu.be/5cO7uYGLz00"
+	},
+	{
+		title: "The Slopes of the Blessure",
+		url: "https://youtu.be/KtIMem0mswE"
+	},
+	{
+		title: "Guillaume versus the Shaelmaar",
+		url: "https://youtu.be/cWubtTpUtSM"
+	},
+	{
+		title: "Wind in the Caroberta Woods",
+		url: "https://youtu.be/PPVwO7igSyA"
+	},
+	{
+		title: "The Beast of Beauclair",
+		url: "https://youtu.be/ETO42KuTX4Y"
+	},
+	{
+		title: "Searching for Cecilia Bellant",
+		url: "https://youtu.be/pkORF53gMas"
+	},
+	{
+		title: "Syanna",
+		url: "https://youtu.be/sHGibm1LR68"
+	},
+	{
+		title: "The Night of Long Fangs",
+		url: "https://youtu.be/OsLb6LGVYSY"
+	},
+	{
+		title: "Lady of the Lake",
+		url: "https://youtu.be/CHSZYTri0ug"
+	}
+];
+
 var attackOnTitan = [];
 var WoW = [];
 
@@ -883,6 +1271,30 @@ for(var i = 0; i < darkestColor.length; i++) {
 	darkestColorFolder.appendChild(el);
 }
 
+var witcherFolder = document.getElementById("witcher");
+for(var i = 0; i < witcher.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = witcher[i].title;
+	el.value = witcher[i].url;
+	witcherFolder.appendChild(el);
+}
+
+var witcherHeartsFolder = document.getElementById("witcherHearts");
+for(var i = 0; i < witcherHearts.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = witcherHearts[i].title;
+	el.value = witcherHearts[i].url;
+	witcherHeartsFolder.appendChild(el);
+}
+
+var witcherBloodFolder = document.getElementById("witcherBlood");
+for(var i = 0; i < witcherBlood.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = witcherBlood[i].title;
+	el.value = witcherBlood[i].url;
+	witcherBloodFolder.appendChild(el);
+}
+
 // witcher - others here
 
 var intoTheBreachFolder = document.getElementById("intoTheBreach");
@@ -980,16 +1392,25 @@ function syncPlayers() {
 	var selection = document.getElementById("dualVideoList").selectedIndex - 1;
 
 	var selectedGroup = 0;
-	if(selection < 10) {
+	if(selection < 10) { // Darkest Dungeon Singles - 10 tracks
 		selectedGroup = 0;
-	} else if(selection < 11) {
+	} else if(selection < 11) { // The Crimson Court - 1 tracks
 		selection = selection - 10;
 		selectedGroup = 1;
-	} else if(selection < 16) {
+	} else if(selection < 16) { // The Color of Madness - 5 tracks
 		selection = selection - 11;
 		selectedGroup = 2;
-	} else if(selection < 42) { // Into The Breach
+	} else if(selection < 76) { // The Witcher 3 - 60 tracks
 		selection = selection - 16;
+		selectedGroup = 3;
+	} else if(selection < 87) { // Hearts of Stone - 11 tracks
+		selection = selection - 76;
+		selectedGroup = 4;
+	} else if(selection < 112) { // Blood and Wine - 25 tracks
+		selection = selection - 87;
+		selectedGroup = 5;
+	} else if(selection < 138) { // Into The Breach - 26 tracks
+		selection = selection - 112;
 		selectedGroup = 8;
 	}
 
