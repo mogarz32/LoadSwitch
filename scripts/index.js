@@ -493,6 +493,10 @@ var darkestBattle = [
 	{
 		title: "Weald Combat",
 		url: "https://youtu.be/sPREO8Tab9Q"
+	},	
+	{
+		title: "The Final Combat",
+		url: "https://youtu.be/4EIAcIjnnQM"
 	}
 ];
 
@@ -512,6 +516,10 @@ var darkestAmbush = [
 	{
 		title: "Weald Ambush",
 		url: "https://youtu.be/oR7rpJS3fAk"
+	},
+	{
+		title: "The Final Combat (with Narrator Quotes)",
+		url: "https://youtu.be/0uR1UfFy0SM"
 	}
 ];
 
@@ -554,10 +562,6 @@ var darkestSingles = [
 	{
 		title: "Return to the Warrens",
 		url: "https://youtu.be/tnU7zf9YVoA"
-	},	
-	{
-		title: "The Final Combat",
-		url: "https://youtu.be/CsW72KIOd8U"
 	}
 ];
 
@@ -1311,16 +1315,16 @@ function syncMenu1() {
 	document.getElementById("videoList2").selectedIndex = selection;
 
 	var selectedGroup = 0;
-	if(selection < 13) {
+	if(selection < 13) {	// Awakening - 13 tracks
 		selectedGroup = 0;
-	} else if(selection < 42) {
+	} else if(selection < 42) {	// Fates - 29 tracks
 		selection = selection - 13;
 		selectedGroup = 1;
-	} else if(selection < 46) {
+	} else if(selection < 47) {	// Darkest Dungeon Battle - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
-	} else if(selection < 48) {
-		selection = selection - 46;
+	} else if(selection < 49) {	// Darkest Dungeon Ambient Light - 2 tracks
+		selection = selection - 47;
 		selectedGroup = 3;
 	}
 
@@ -1352,16 +1356,16 @@ function syncMenu2() {
 	document.getElementById("videoList1").selectedIndex = selection;
 
 	var selectedGroup = 0;
-	if(selection < 13) {
+	if(selection < 13) {	// Awakening Ablaze - 13 tracks
 		selectedGroup = 0;
-	} else if(selection < 42) {
+	} else if(selection < 42) {	// Fates Ablaze - 29 tracks
 		selection = selection - 13;
 		selectedGroup = 1;
-	} else if(selection < 46) {
+	} else if(selection < 47) {	// Darkest Dungeon Ambush - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
-	} else if(selection < 48) {
-		selection = selection - 46;
+	} else if(selection < 49) {	// Darkest Dungeon Ambient Torchless - 2 tracks
+		selection = selection - 47;
 		selectedGroup = 3;
 	}
 	
@@ -1392,25 +1396,25 @@ function syncPlayers() {
 	var selection = document.getElementById("dualVideoList").selectedIndex - 1;
 
 	var selectedGroup = 0;
-	if(selection < 10) { // Darkest Dungeon Singles - 10 tracks
+	if(selection < 9) { // Darkest Dungeon Singles - 10 tracks
 		selectedGroup = 0;
-	} else if(selection < 11) { // The Crimson Court - 1 tracks
-		selection = selection - 10;
+	} else if(selection < 10) { // The Crimson Court - 1 tracks
+		selection = selection - 9;
 		selectedGroup = 1;
-	} else if(selection < 16) { // The Color of Madness - 5 tracks
-		selection = selection - 11;
+	} else if(selection < 15) { // The Color of Madness - 5 tracks
+		selection = selection - 10;
 		selectedGroup = 2;
-	} else if(selection < 76) { // The Witcher 3 - 60 tracks
-		selection = selection - 16;
+	} else if(selection < 75) { // The Witcher 3 - 60 tracks
+		selection = selection - 15;
 		selectedGroup = 3;
-	} else if(selection < 87) { // Hearts of Stone - 11 tracks
-		selection = selection - 76;
+	} else if(selection < 86) { // Hearts of Stone - 11 tracks
+		selection = selection - 75;
 		selectedGroup = 4;
-	} else if(selection < 112) { // Blood and Wine - 25 tracks
-		selection = selection - 87;
+	} else if(selection < 111) { // Blood and Wine - 25 tracks
+		selection = selection - 86;
 		selectedGroup = 5;
-	} else if(selection < 138) { // Into The Breach - 26 tracks
-		selection = selection - 112;
+	} else if(selection < 137) { // Into The Breach - 26 tracks
+		selection = selection - 111;
 		selectedGroup = 8;
 	}
 
