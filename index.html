@@ -21,6 +21,7 @@
         <form>Video 1<br><input type="url" class="singleLink" id="link1" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo1()"></form>
         <div class="dropdown">
           <select id="videoList1" class="list" onchange="syncMenu1()">
+            <option disabled selected value>--Player 1 Loader Dropdown--</option>
             <optgroup label="Fire Emblem: Awakening" id="awakening"></optgroup>
             <optgroup label="Fire Emblem: Fates" id="fates"></optgroup>
             <optgroup label="Darkest Dungeon: Full Light Battle" id="darkestBattle"></optgroup>
@@ -56,8 +57,7 @@
             <optgroup label="Erased" id="erased"></optgroup>
             <optgroup label="Ambient Sounds" id="ambient"></optgroup>
         </select>
-        <br>
-        <br>
+        <img width="200px" height="50px" src="assets/centerLogo.png" class="centerLogo" visibility="hidden">
         <button title="Play/Pause (or hit 1)" class="play" id="play" onclick="play()"><img src="assets/play-button.png" height=50px width=50px id="img" class="img"></button>
         <br>
         <label title="Toggle Between Videos (or hit t)" class="switch">
@@ -75,6 +75,7 @@
         <form>Video 2<br><input type="url" class="singleLink" id="link2" placeholder="Use Dropdown Menu or Paste URL Here" oninput="loadVideo2()"></form>
         <div class="dropdown">
           <select id="videoList2" class="list" onchange="syncMenu2()">
+            <option disabled selected value>--Player 2 Loader Dropdown--</option>
             <optgroup label="Fire Emblem: Awakening" id="awakeningAblaze"></optgroup>
             <optgroup label="Fire Emblem: Fates" id="fatesAblaze"></optgroup>
             <optgroup label="Darkest Dungeon: Torchless Battle" id="darkestAmbush"></optgroup>

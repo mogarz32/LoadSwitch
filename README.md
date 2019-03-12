@@ -24,6 +24,8 @@ To Do:
 
 * ~Add text boxes and a dropdown menu that allow users to load a single video into both players.~
 
+* Add Previous/Next Track buttons.
+
 * Allow users to add up to 4 more panels (2 players with play/pause and toggle buttons).
 
 * Create a playlist that allows users to load in multiple videos.

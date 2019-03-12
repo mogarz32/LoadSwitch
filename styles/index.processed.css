@@ -1,8 +1,14 @@
+.centerLogo {
+  transform: translate(0, -40%);
+  visibility: hidden;
+}
+
 /* Volume Slider */
 .volumeContainer {
   padding-top: 1%;
   width: 100%;
   margin: auto;
+  transform: translate(0, -85%);
 }
 
 .volume {
@@ -187,6 +193,7 @@ form {
   padding: 4px 4px 1px 4px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+  transform: translate(0, -20%);
 }
 
 .play:hover {
@@ -204,6 +211,7 @@ form {
   padding: 4px 4px 1px 4px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+  transform: translate(0, -20%);
 }
 
 .play2:hover {
@@ -235,7 +243,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
-  transform: translate(0, 10%);
+  transform: translate(0, -30%);
 }
 
 /* Hide default HTML checkbox */

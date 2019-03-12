@@ -532,18 +532,6 @@ var darkestSingles = [
 		url: "https://youtu.be/xjnrYyZqm9M"
 	},
 	{
-		title: "House of Ruin",
-		url: "https://youtu.be/0ZC7CU66g2U"
-	},
-	{
-		title: "Terror and Madness",
-		url: "https://youtu.be/Qn02mFkiWt0"
-	},
-	{
-		title: "Town in Chaos",
-		url: "https://youtu.be/2zx2FU6X65s"
-	},
-	{
 		title: "The Hamlet",
 		url: "https://youtu.be/_QXpj7g5gio"
 	},
@@ -552,9 +540,21 @@ var darkestSingles = [
 		url: "https://youtu.be/uLGIyx8mtxM"
 	},
 	{
-		title: "Weald Ambient",
-		url: "https://youtu.be/3bMAF_C1rbA"
-	},	
+		title: "Terror and Madness",
+		url: "https://youtu.be/Qn02mFkiWt0"
+	},
+	{
+		title: "House of Ruin",
+		url: "https://youtu.be/0ZC7CU66g2U"
+	},
+	{
+		title: "The End",
+		url: "https://youtu.be/jFnWcCkeBF4"
+	},
+	{
+		title: "Town in Chaos",
+		url: "https://youtu.be/2zx2FU6X65s"
+	},
 	{
 		title: "Siren Battle",
 		url: "https://youtu.be/6d8JWq0N-r4"
@@ -562,6 +562,10 @@ var darkestSingles = [
 	{
 		title: "Return to the Warrens",
 		url: "https://youtu.be/tnU7zf9YVoA"
+	},
+	{
+		title: "Weald Ambient",
+		url: "https://youtu.be/3bMAF_C1rbA"
 	}
 ];
 
@@ -1313,6 +1317,7 @@ for(var i = 0; i < intoTheBreach.length; i++) {
 function syncMenu1() {
 	var selection = document.getElementById("videoList1").selectedIndex;
 	document.getElementById("videoList2").selectedIndex = selection;
+	selection = selection - 1;
 
 	var selectedGroup = 0;
 	if(selection < 13) {	// Awakening - 13 tracks
@@ -1332,6 +1337,8 @@ function syncMenu1() {
 	var link2ID = youtube_parser(rightFolders[selectedGroup].folder[selection].url);
     player1.loadVideoById(link1ID);
     player2.loadVideoById(link2ID);
+
+    document.getElementById("dualVideoList").selectedIndex = 0;
 
     player1.seekTo(0);
 	player1.pauseVideo();
@@ -1354,6 +1361,7 @@ function syncMenu1() {
 function syncMenu2() {
 	var selection = document.getElementById("videoList2").selectedIndex;
 	document.getElementById("videoList1").selectedIndex = selection;
+	selection = selection - 1;
 
 	var selectedGroup = 0;
 	if(selection < 13) {	// Awakening Ablaze - 13 tracks
@@ -1373,6 +1381,8 @@ function syncMenu2() {
 	var link2ID = youtube_parser(rightFolders[selectedGroup].folder[selection].url);
     player1.loadVideoById(link1ID);
     player2.loadVideoById(link2ID);
+
+    document.getElementById("dualVideoList").selectedIndex = 0;
 
     player1.seekTo(0);
 	player1.pauseVideo();
@@ -1396,31 +1406,34 @@ function syncPlayers() {
 	var selection = document.getElementById("dualVideoList").selectedIndex - 1;
 
 	var selectedGroup = 0;
-	if(selection < 9) { // Darkest Dungeon Singles - 10 tracks
+	if(selection < 10) { // Darkest Dungeon Singles - 11 tracks
 		selectedGroup = 0;
-	} else if(selection < 10) { // The Crimson Court - 1 tracks
-		selection = selection - 9;
-		selectedGroup = 1;
-	} else if(selection < 15) { // The Color of Madness - 5 tracks
+	} else if(selection < 11) { // The Crimson Court - 1 tracks
 		selection = selection - 10;
+		selectedGroup = 1;
+	} else if(selection < 16) { // The Color of Madness - 5 tracks
+		selection = selection - 11;
 		selectedGroup = 2;
-	} else if(selection < 75) { // The Witcher 3 - 60 tracks
-		selection = selection - 15;
+	} else if(selection < 76) { // The Witcher 3 - 60 tracks
+		selection = selection - 16;
 		selectedGroup = 3;
-	} else if(selection < 86) { // Hearts of Stone - 11 tracks
-		selection = selection - 75;
+	} else if(selection < 87) { // Hearts of Stone - 11 tracks
+		selection = selection - 76;
 		selectedGroup = 4;
-	} else if(selection < 111) { // Blood and Wine - 25 tracks
-		selection = selection - 86;
+	} else if(selection < 112) { // Blood and Wine - 25 tracks
+		selection = selection - 87;
 		selectedGroup = 5;
-	} else if(selection < 137) { // Into The Breach - 26 tracks
-		selection = selection - 111;
+	} else if(selection < 138) { // Into The Breach - 26 tracks
+		selection = selection - 112;
 		selectedGroup = 8;
 	}
 
 	var linkID = youtube_parser(centerFolders[selectedGroup].folder[selection].url);
     player1.loadVideoById(linkID);
     player2.loadVideoById(linkID);
+
+    document.getElementById("videoList1").selectedIndex = 0;
+    document.getElementById("videoList2").selectedIndex = 0;
 
     player1.seekTo(0);
 	player1.pauseVideo();
