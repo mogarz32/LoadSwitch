@@ -1420,6 +1420,7 @@ function syncPlayers() {
 	} else if(selection < 11) { // The Crimson Court - 1 tracks
 		selection = selection - 10;
 		selectedGroup = 1;
+		setBackground("crimson-court");
 	} else if(selection < 16) { // The Color of Madness - 5 tracks
 		selection = selection - 11;
 		selectedGroup = 2;
