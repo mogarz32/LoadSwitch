@@ -232,7 +232,7 @@ var fates = [
 	},
 	{
 		title: "Destiny, Help Us",
-		url: ""
+		url: "https://youtu.be/e2DeBT8GO8o"
 	},
 	{
 		title: "Dignity of Contest",
