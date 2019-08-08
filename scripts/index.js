@@ -1330,9 +1330,11 @@ function syncMenu1() {
 	} else if(selection < 47) {	// Darkest Dungeon Battle - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
+		setBackground("darkest-dungeon");
 	} else if(selection < 49) {	// Darkest Dungeon Ambient Light - 2 tracks
 		selection = selection - 47;
 		selectedGroup = 3;
+		setBackground("darkest-dungeon");
 	}
 
 	var link1ID = youtube_parser(leftFolders[selectedGroup].folder[selection].url);
@@ -1376,9 +1378,11 @@ function syncMenu2() {
 	} else if(selection < 47) {	// Darkest Dungeon Ambush - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
+		setBackground("darkest-dungeon");
 	} else if(selection < 49) {	// Darkest Dungeon Ambient Torchless - 2 tracks
 		selection = selection - 47;
 		selectedGroup = 3;
+		setBackground("darkest-dungeon");
 	}
 	
 	var link1ID = youtube_parser(leftFolders[selectedGroup].folder[selection].url);
@@ -1412,6 +1416,7 @@ function syncPlayers() {
 	var selectedGroup = 0;
 	if(selection < 10) { // Darkest Dungeon Singles - 11 tracks
 		selectedGroup = 0;
+		setBackground("darkest-dungeon");
 	} else if(selection < 11) { // The Crimson Court - 1 tracks
 		selection = selection - 10;
 		selectedGroup = 1;
