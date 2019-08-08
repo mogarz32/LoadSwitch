@@ -339,15 +339,15 @@ var fates = [
 var fatesAblaze = [
 	{
 		title: "A Dark Fall (Fire)",
-		url: ""
+		url: "https://youtu.be/d8lVbAW78mk"
 	},
 	{
 		title: "Alight (Storm)",
-		url: ""
+		url: "https://youtu.be/lnchoV5nMNg"
 	},
 	{
 		title: "Dark Wastes (Fire)",
-		url: ""
+		url: "https://youtu.be/Ox9VQendePM"
 	},
 	{
 		title: "Destiny By Blood",
@@ -355,103 +355,103 @@ var fatesAblaze = [
 	},
 	{
 		title: "Dignity of Contest (Roar)",
-		url: ""
+		url: "https://youtu.be/XZCGLAzfXqo"
 	},
 	{
 		title: "Dusk Falls (Fire)",
-		url: ""
+		url: "https://youtu.be/t_ty4keGgpk"
 	},
 	{
 		title: "Far Away (Deeds)",
-		url: ""
+		url: "https://youtu.be/L734sVoGL8g"
 	},
 	{
 		title: "Far Dawn (Storm)",
-		url: ""
+		url: "https://youtu.be/g0NQE2Cf1RI"
 	},
 	{
 		title: "Glory/Ruin (Deeds)",
-		url: ""
+		url: "https://youtu.be/SMKDU3MNWmU"
 	},
 	{
 		title: "Guest of Shade",
-		url: ""
+		url: "https://youtu.be/SQtVE3mcO9Q"
 	},
 	{
 		title: "Homesick (Dark)",
-		url: ""
+		url: "https://youtu.be/s87q1zExTwo"
 	},
 	{
 		title: "Justice RIP (Storm)",
-		url: ""
+		url: "https://youtu.be/z3ziqU1d1EI"
 	},
 	{
 		title: "Knowledge (Roar)",
-		url: ""
+		url: "https://youtu.be/SzCHkVZmjlo"
 	},
 	{
 		title: "Land Below (Flow)",
-		url: ""
+		url: "https://youtu.be/JeKS5uZWwuk"
 	},
 	{
 		title: "No Justice (Fire)",
-		url: ""
+		url: "https://youtu.be/IDQaqF-uo2c"
 	},
 	{
 		title: "Paradise (Dark)",
-		url: ""
+		url: "https://youtu.be/dDpWuYrMf70"
 	},
 	{
 		title: "Past Below (Flow)",
-		url: ""
+		url: "https://youtu.be/0aGn_1K3CcE"
 	},
 	{
 		title: "Past Light (Storm)",
-		url: ""
+		url: "https://youtu.be/B5TJWwFZF7k"
 	},
 	{
 		title: "Prelude to Dispute",
-		url: ""
+		url: "https://youtu.be/MThpvmCS5mc"
 	},
 	{
 		title: "Quiet Burn (Roar)",
-		url: ""
+		url: "https://youtu.be/PWAbCOGkdAg"
 	},
 	{
 		title: "Raging Dark Winds",
-		url: ""
+		url: "https://youtu.be/PNcPi6fVa5s"
 	},
 	{
 		title: "Resolve (Dark)",
-		url: ""
+		url: "https://youtu.be/rooYCL8Ku-Y"
 	},
 	{
 		title: "Road Taken (Roar)",
-		url: ""
+		url: "https://youtu.be/0beVfFL1J2s"
 	},
 	{
 		title: "Rush (Dark)",
-		url: ""
+		url: "https://youtu.be/ttrH8GZlFjk"
 	},
 	{
 		title: "Sea of Aspiration (Flow)",
-		url: ""
+		url: "https://youtu.be/XL7qkfxOp7s"
 	},
 	{
 		title: "Thorn in You (Roar)",
-		url: ""
+		url: "https://youtu.be/t_gWAZcGMkE"
 	},
 	{
 		title: "Vanity Judge (Roar)",
-		url: ""
+		url: "https://youtu.be/a6Vlr8zt5Hw"
 	},
 	{
 		title: "Woleb Tsap (Flow)",
-		url: ""
+		url: "https://youtu.be/2JgMyDJG27w"
 	},
 	{
 		title: "You of the Dark",
-		url: ""
+		url: "https://youtu.be/xQA2TdTMWko"
 	},
 ];
 
