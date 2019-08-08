@@ -244,7 +244,7 @@ var fates = [
 	},
 	{
 		title: "Far Away",
-		url: "https://youtu.be/vqXhrh2e1v8"
+		url: "https://www.youtube.com/watch?v=vqXhrh2e1v8&list=PLCBrUTafYz3YI00R5D7A5MMQFPwAVCzKk&index=40"
 	},
 	{
 		title: "Far Dawn",
