@@ -1489,7 +1489,7 @@ function check() {
 
 // Background image changing
 function setBackground(image) {
-	var urlString = 'url(..assets/' + image + '.png)';
+	var urlString = 'url(assets/' + image + '.png)';
 	document.getElementById("container").style.backgroundImage = urlString;
 }
 
