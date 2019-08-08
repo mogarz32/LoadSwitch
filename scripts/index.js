@@ -110,7 +110,7 @@ function onPlayerStateChange(event) {
 var awakening = [
 	{
 		title: "Aggression",
-		url: "https://youtu.be/9K9y1cKVMIU"
+		url: "https://youtu.be/eRT_xRPp2Zs"
 	},
 	{
 		title: "Annihilation",
