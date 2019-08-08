@@ -114,11 +114,11 @@ var awakening = [
 	},
 	{
 		title: "Annihilation",
-		url: "https://youtu.be/vJw2wtwROtQ"
+		url: "https://youtu.be/prxUvJju-PM"
 	},
 	{
 		title: "Assault",
-		url: "https://youtu.be/v6BBKdaBNmg"
+		url: "https://youtu.be/-74az5_UF_w"
 	},
 	{
 		title: "Champion",
