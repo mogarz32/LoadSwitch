@@ -1322,11 +1322,11 @@ function syncMenu1() {
 	var selectedGroup = 0;
 	if(selection < 13) {	// Awakening - 13 tracks
 		selectedGroup = 0;
-		setBackground("../assets/awakening-logo.png");
+		setBackground("awakening-logo");
 	} else if(selection < 42) {	// Fates - 29 tracks
 		selection = selection - 13;
 		selectedGroup = 1;
-		setBackground("../assets/fates-logo.png");
+		setBackground("fates-logo");
 	} else if(selection < 47) {	// Darkest Dungeon Battle - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
@@ -1368,11 +1368,11 @@ function syncMenu2() {
 	var selectedGroup = 0;
 	if(selection < 13) {	// Awakening Ablaze - 13 tracks
 		selectedGroup = 0;
-		setBackground("../assets/awakening-logo.png");
+		setBackground("awakening-logo");
 	} else if(selection < 42) {	// Fates Ablaze - 29 tracks
 		selection = selection - 13;
 		selectedGroup = 1;
-		setBackground("../assets/fates-logo.png");
+		setBackground("fates-logo");
 	} else if(selection < 47) {	// Darkest Dungeon Ambush - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
@@ -1488,8 +1488,9 @@ function check() {
 }
 
 // Background image changing
-function setBackground(imageURL) {
-	document.getElementById("container").style.backgroundImage = url(imageURL);
+function setBackground(image) {
+	var urlString = 'url(..assets/' + image + '.png)';
+	document.getElementById("container").style.backgroundImage = urlString;
 }
 
 // Textfield URL video queueing
