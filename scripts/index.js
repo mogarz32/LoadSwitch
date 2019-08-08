@@ -1424,6 +1424,7 @@ function syncPlayers() {
 	} else if(selection < 16) { // The Color of Madness - 5 tracks
 		selection = selection - 11;
 		selectedGroup = 2;
+		setBackground("color-of-madness");
 	} else if(selection < 76) { // The Witcher 3 - 60 tracks
 		selection = selection - 16;
 		selectedGroup = 3;
