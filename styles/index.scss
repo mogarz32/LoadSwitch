@@ -1,39 +1,330 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Basic styles*/
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  
+  /* Using inset box-shadow instead of border for sizing simplicity */
+  box-shadow: inset 0 0 0 2px red;
+  color: red;
+  font-size: inherit;
+  font-weight: 700;
 
-h2 {
+  /* Required, since we're setting absolute on pseudo-elements */
+  position: relative;
+  vertical-align: middle;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.draw {
+    transition: color 0.25s;
+
+  &::before,
+  &::after {
+    /* Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts */
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  /* This covers the top & right borders (expands right, then down) */
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  /* And this the bottom & left borders (expands left, then up) */
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  &:hover {
+    color: cyan;
+  }
+
+  /* Hover styles */
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: cyan; /* Make borders visible */
+    border-right-color: cyan;
+    transition:
+      width 0.25s ease-out, /* Width expands first */
+      height 0.25s ease-out 0.25s; /* And then height */
+  }
+
+  &:hover::after {
+    border-bottom-color: cyan; /* Make borders visible */
+    border-left-color: cyan;
+    transition:
+      border-color 0s ease-out 0.5s, /* Wait for ::before to finish before showing border */
+      width 0.25s ease-out 0.5s, /* And then expanding width */
+      height 0.25s ease-out 0.75s; /* And finally height */
+  }
+}
+
+#player1 {
+  width: 356px;
+  height: 200px;
+
+  position: relative;
+  margin: auto;
+  vertical-align: middle;
+  padding: 0;
+
+  box-shadow: 0 0 0 5px red;
+  color: red;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#player2 {
+  display: block;
+  margin: auto;
+  border: 5px solid red;
+}
+
+/*
+.box {
+  margin: auto;
+  width: 366px;
+  height: 210px;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box span {
+  position: absolute;
+  margin: auto;
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.box span:nth-child(2) {
+  transform: rotate(90deg);
+  padding-left: 732px;
+}
+
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+  transform: translate(366px, 205px);
+}
+
+.box span:nth-child(4) {
+  transform: rotate(270deg);
+}
+
+.box span:before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  width: 366px;
+  height: 5px;
+  background: #00bfff;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% 
+  {
+    transform:scaleX(0);
+    transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+    transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+    transform-origin: right;
+  }
+  100%
+  {
+    transform:scaleX(0);
+    transform-origin: right;
+  }
+}*/
+
+.centerLogo {
+  transform: translate(0, -40%);
+  visibility: hidden;
+}
+
+/* Volume Slider */
+.volumeContainer {
+  padding-top: 1%;
+  width: 100%;
+  margin: auto;
+  transform: translate(0, -85%);
+}
+
+.volume {
+  margin: auto;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;   
+  background: #00bfff;
+  outline: none;
+}
+
+.volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%; 
+  background: white;
+  cursor: pointer;
+}
+
+.volume::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.volume2 {
+  margin: auto;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;   
+  background: red;
+  outline: none;
+}
+
+.volume2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%; 
+  background: black;
+  cursor: pointer;
+}
+
+.volume2::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+.list {
+  width: 366px;
+  height: 20px;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.dualList {
+  width: 100%;
+  height: 20px;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  transform: translate(0, -200%);
+}
+
+.dropdown {
+  margin: 0 0 20px 0;
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  transform: translate(0, -180%);
+  text-decoration: underline;
 }
 
 form {
   transform: translate(0, 13%);
 }
 
-input[type=url] {
+.dualLink {
   width: 100%;
-  transform: translate(0, -30%);
+  transform: translate(0, -170%);
   padding: 5px;
-  margin: 8px 0;
+  margin: 8px 0 0 0;
   box-sizing: border-box;
   border: 2px solid black;
   border-radius: 4px;
   background-color: grey;
 }
 
-.playeder-r{
-  display: block;
-  margin: auto;
+.singleLink {
+  width: 360px;
+  transform: translate(0, -30%);
+  padding: 5px;
+  margin: 8px 0 0 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: grey;
 }
 
-.player2 {
-  display: block;
-  margin: auto;
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: .5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
 }
 
 .container {
   text-align: center;
   background-image: linear-gradient(#212121, #303030);
   margin: auto;
-  width: 60%;
+  width: 100vw;
   box-shadow: 0 4px 8px 0 dimgrey, 0 6px 20px 0 black;
 }
 
@@ -46,7 +337,15 @@ input[type=url] {
 
 .inner {
   float: left;
-  width: 33%;
+  width: 33vw;
+}
+
+.center {
+  float: left;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  margin: auto;
 }
 
 /* Style play button */
@@ -55,10 +354,11 @@ input[type=url] {
   border: none; /* Remove borders */
   border-radius: 50%;
   color: white; /* White text */
-  margin: 10px;
-  padding: 12px 16px; /* Some padding */
+  margin: auto auto 10px auto;
+  padding: 4px 4px 1px 4px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+  transform: translate(0, -20%);
 }
 
 .play:hover {
@@ -66,27 +366,40 @@ input[type=url] {
   background-color: red;
 }
 
-/* Style pause button */
-.pause {
-  background-color: red; /* Blue background */
+/* Style play2 button */
+.play2 {
+  background-color: red; /* Red background */
   border: none; /* Remove borders */
   border-radius: 50%;
-  color: black; /* White text */
-  margin: 10px;
-  padding: 12px 16px; /* Some padding */
+  color: black; /* Black text */
+  margin: auto auto 10px auto;
+  padding: 4px 4px 1px 4px; /* Some padding */
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+  transform: translate(0, -20%);
 }
 
-.pause:hover {
+.play2:hover {
   color: white;
   background-color: #00bfff;
+}
+
+.img2 {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.img2:hover {
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 
 body {
   font-family: Helvetica;
   color: white;
   background: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 /* The switch - the box around the slider */
@@ -95,6 +408,7 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
+  transform: translate(0, -30%);
 }
 
 /* Hide default HTML checkbox */

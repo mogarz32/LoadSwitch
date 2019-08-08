@@ -1,3 +1,86 @@
+
+
+#player1 {
+  display: block;
+  margin: auto;
+  border: 5px solid #00bfff;
+}
+
+#player2 {
+  display: block;
+  margin: auto;
+  border: 5px solid red;
+}
+
+/*
+.box {
+  margin: auto;
+  width: 366px;
+  height: 210px;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box span {
+  position: absolute;
+  margin: auto;
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.box span:nth-child(2) {
+  transform: rotate(90deg);
+  padding-left: 732px;
+}
+
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+  transform: translate(366px, 205px);
+}
+
+.box span:nth-child(4) {
+  transform: rotate(270deg);
+}
+
+.box span:before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  width: 366px;
+  height: 5px;
+  background: #00bfff;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% 
+  {
+    transform:scaleX(0);
+    transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+    transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+    transform-origin: right;
+  }
+  100%
+  {
+    transform:scaleX(0);
+    transform-origin: right;
+  }
+}*/
+
 .centerLogo {
   transform: translate(0, -40%);
   visibility: hidden;
@@ -141,18 +224,6 @@ form {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
-}
-
-#player1 {
-  display: block;
-  margin: auto;
-  border: 5px solid #00bfff;
-}
-
-#player2 {
-  display: block;
-  margin: auto;
-  border: 5px solid red;
 }
 
 .container {
