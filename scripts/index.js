@@ -1322,11 +1322,11 @@ function syncMenu1() {
 	var selectedGroup = 0;
 	if(selection < 13) {	// Awakening - 13 tracks
 		selectedGroup = 0;
-		setBackground("url(../assets/awakening-logo.png)");
+		setBackground(url("../assets/awakening-logo.png"));
 	} else if(selection < 42) {	// Fates - 29 tracks
 		selection = selection - 13;
 		selectedGroup = 1;
-		setBackground("url(../assets/fates-logo.png)");
+		setBackground(url("../assets/fates-logo.png"));
 	} else if(selection < 47) {	// Darkest Dungeon Battle - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
@@ -1368,11 +1368,11 @@ function syncMenu2() {
 	var selectedGroup = 0;
 	if(selection < 13) {	// Awakening Ablaze - 13 tracks
 		selectedGroup = 0;
-		setBackground("url(../assets/awakening-logo.png)");
+		setBackground(url("../assets/awakening-logo.png"));
 	} else if(selection < 42) {	// Fates Ablaze - 29 tracks
 		selection = selection - 13;
 		selectedGroup = 1;
-		setBackground("url(../assets/fates-logo.png)");
+		setBackground(url("../assets/fates-logo.png"));
 	} else if(selection < 47) {	// Darkest Dungeon Ambush - 5 tracks
 		selection = selection - 42;
 		selectedGroup = 2;
