@@ -114,106 +114,106 @@ var awakening = [
 	},
 	{
 		title: "Annihilation",
-		url: "https://youtu.be/_M3oin5KBGU"
+		url: "https://youtu.be/vJw2wtwROtQ"
 	},
 	{
 		title: "Assault",
-		url: "https://youtu.be/BCsZhEEdPTA"
+		url: "https://youtu.be/v6BBKdaBNmg"
 	},
 	{
 		title: "Champion",
-		url: "https://youtu.be/HyjLmvdVQ4s"
+		url: "https://youtu.be/1475DI6NsmE"
 	},
   	{ 	
   		title: "Chaos",
-    	url: "https://youtu.be/tw03z6_6bRE"
+    	url: "https://youtu.be/W_FuSN8kFJQ"
   	},
   	{ 	
   		title: "Conquest",
-    	url: "https://youtu.be/NpuRAyEdkYk"
+    	url: "https://youtu.be/k8Tg4vqnoOg"
 	},
 	{
 		title: "Destiny",
-		url: "https://youtu.be/IMyAwlG791E"
+		url: "https://youtu.be/VuuEdvu1rVA"
 	},
 	{
 		title: "Divine Decree",
-		url: "https://youtu.be/dqhMprY0mqM"
+		url: "https://youtu.be/Y-V6yXXt_XI"
 	},
 	{
 		title: "Duty",
-		url: "https://youtu.be/j51sAfHGhSs"
+		url: "https://youtu.be/RoAb8Lskk-k"
 	},
 	{
 		title: "Prelude",
-		url: "https://youtu.be/iZ8UNQ9rd8Y"
+		url: "https://youtu.be/j3HpCAQoBWA"
 	},
 	{
 		title: "Rival (Intro)",
-		url: "https://youtu.be/8Oe1gv3DdY8"
+		url: "https://youtu.be/GPSGpADc5-E"
 	},
 	{
 		title: "Storm Clouds",
-		url: "https://youtu.be/fYrCUODorXE"
+		url: "https://youtu.be/ORFayFT93qw"
 	},
 	{
 		title: "Training",
-		url: "https://youtu.be/ysX_CvJdpuM"
+		url: "https://youtu.be/m3m7KeCTRCA"
 	}
 ];
 
 var awakeningAblaze = [
 	{
 		title: "Aggression (Galvanized)",
-		url: "https://youtu.be/XRK3fyYAB4E"
+		url: "https://youtu.be/ZAR-08fCA-0"
 	},
 	{
 		title: "Annihilation (Galvanized)",
-		url: "https://youtu.be/98jJXTRRftI"
+		url: "https://youtu.be/cjbejwfz7vc"
 	},
 	{
 		title: "Assault (Galvanized)",
-		url: "https://youtu.be/Hi7Lea2tifU"
+		url: "https://youtu.be/iaOJUCoUQAQ"
 	},
 	{
 		title: "Champion (Ablaze)",
-		url: "https://youtu.be/Qyvzb8nQRyc"
+		url: "https://youtu.be/EEBX4PVx0j4"
 	},
   	{ 	
   		title: "Chaos (Ablaze)",
-    	url: "https://youtu.be/4Uuwsy9Tyto"
+    	url: "https://youtu.be/75QVGFJcSjk"
   	},
   	{ 	
   		title: "Conquest (Ablaze)",
-    	url: "https://youtu.be/EpflXpqk4CA"
+    	url: "https://youtu.be/eGjK0AeylrI"
 	},
 	{
 		title: "Destiny (Ablaze)",
-		url: "https://youtu.be/IVNub5ztLvs"
+		url: "https://youtu.be/EHF1iz2X2AU"
 	},
 	{
 		title: "Divine Decree (Ablaze)",
-		url: "https://youtu.be/-x_BCJG80DA"
+		url: "https://youtu.be/EeYdB-Id_g8"
 	},
 	{
 		title: "Duty (Ablaze)",
-		url: "https://youtu.be/i-J16DLsVkg"
+		url: "https://youtu.be/NtVYoXE0Cv4"
 	},
 	{
 		title: "Prelude (Ablaze)",
-		url: "https://youtu.be/Iyrku8k8GiU"
+		url: "https://youtu.be/NiOM1aNXJIM"
 	},
 	{
 		title: "Rival",
-		url: "https://youtu.be/8Tv4CdEe1_g"
+		url: "https://youtu.be/a4xlB_tKAPE"
 	},
 	{
 		title: "Storm Clouds (Ablaze)",
-		url: "https://youtu.be/eUmaUanZVZU"
+		url: "https://youtu.be/51MlsyQaB7A"
 	},
 	{
-		title: "Training (Ablaze)",
-		url: "https://youtu.be/LM3K-UVbY0g"
+		title: "Training (Galvanized)",
+		url: "https://youtu.be/DjrTNay5s9g"
 	}
 ];
 
