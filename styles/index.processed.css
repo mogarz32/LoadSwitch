@@ -4,12 +4,14 @@
   display: block;
   margin: auto;
   border: 5px solid #00bfff;
+  opacity: .5;
 }
 
 #player2 {
   display: block;
   margin: auto;
   border: 5px solid red;
+  opacity: .5;
 }
 
 .game-logo {
