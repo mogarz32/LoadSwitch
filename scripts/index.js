@@ -220,238 +220,238 @@ var awakeningAblaze = [
 var fates = [
 	{
 		title: "A Dark Fall",
-		url: "https://youtu.be/gBQFNUJ8s2A"
+		url: "https://youtu.be/XF9_4V7eCSg"
 	},
 	{
 		title: "Alight",
-		url: "https://youtu.be/KA6IVBtUx1w"
+		url: "https://youtu.be/a0S_guokfHk"
 	},
 	{
 		title: "Dark Wastes",
-		url: "https://youtu.be/F1f9CRJisnE"
+		url: "https://youtu.be/LUfT5woqe6A"
 	},
 	{
 		title: "Destiny, Help Us",
-		url: "https://youtu.be/XCa1Vl8deYA"
+		url: ""
 	},
 	{
 		title: "Dignity of Contest",
-		url: "https://youtu.be/zzSMJH_HLYY"
+		url: "https://youtu.be/e-svbJor0a8"
 	},
 	{
 		title: "Dusk Falls",
-		url: "https://youtu.be/IYFI_JrWSEE"
+		url: "https://youtu.be/yWC1JpKWIgM"
 	},
 	{
 		title: "Far Away",
-		url: "https://youtu.be/b6C0Yi2-CyM"
+		url: "https://youtu.be/vqXhrh2e1v8"
 	},
 	{
 		title: "Far Dawn",
-		url: "https://youtu.be/UpXxLHjw2E8"
+		url: "https://youtu.be/sYnabd_jAMg"
 	},
 	{
 		title: "Glory/Ruin",
-		url: "https://youtu.be/diEQtm9ULG4"
+		url: "https://youtu.be/XdLaoWh6A_g"
 	},
 	{
 		title: "Guest of Light",
-		url: "https://youtu.be/eMUXVo5zq6A"
+		url: "https://youtu.be/0v7-AP1IRDY"
 	},
 	{
 		title: "Homesick (Light)",
-		url: "https://youtu.be/d6P3GB1qQk8"
+		url: "https://youtu.be/jmAaQLX0X3k"
 	},
 	{
 		title: "Justice RIP",
-		url: "https://youtu.be/b-RZpoiSFpk"
+		url: "https://youtu.be/zE2yJ2m3ovo"
 	},
 	{
 		title: "Knowledge",
-		url: "https://youtu.be/P0F7O9Psyg4"
+		url: "https://youtu.be/VPdPjgBF4jI"
 	},
 	{
 		title: "Land Below",
-		url: "https://youtu.be/2E4a0EHns_k"
+		url: "https://youtu.be/0PaiV0OZ5_g"
 	},
 	{
 		title: "No Justice",
-		url: "https://youtu.be/_PYIQBkJRR8"
+		url: "https://youtu.be/mwB_J-e9O7A"
 	},
 	{
 		title: "Paradise (Light)",
-		url: "https://youtu.be/2E4a0EHns_k"
+		url: "https://youtu.be/gpSBm6KC67I"
 	},
 	{
 		title: "Past Below",
-		url: "https://youtu.be/hZBqQ_3oOho"
+		url: "https://youtu.be/2mbSzdn3QDE"
 	},
 	{
 		title: "Past Light",
-		url: "https://youtu.be/10kqK0fMk28"
+		url: "https://youtu.be/Di0Q5RtSNY4"
 	},
 	{
 		title: "Prelude to Disaster",
-		url: "https://youtu.be/Uo2H7K_WJ_o"
+		url: "https://youtu.be/ZHjuXL1AZUI"
 	},
 	{
 		title: "Quiet Burn",
-		url: "https://youtu.be/J43Rqj1lf-M"
+		url: "https://youtu.be/wCQfxV3CARk"
 	},
 	{
 		title: "Rage in the Light",
-		url: "https://youtu.be/HdIBCaeJ5Jk"
+		url: "https://youtu.be/CaTYm5_SzJw"
 	},
 	{
 		title: "Resolve (Light)",
-		url: "https://youtu.be/8Mfi6CUCiXU"
+		url: "https://youtu.be/zqF3urmS3Ms"
 	},
 	{
 		title: "Road Taken",
-		url: "https://youtu.be/OShvQvG_Obw"
+		url: "https://youtu.be/OS22Ft8cnrk"
 	},
 	{
 		title: "Rush (Light)",
-		url: "https://youtu.be/Xp3sRVYgl6M"
+		url: "https://youtu.be/14JSIvYrPgI"
 	},
 	{
 		title: "Sea of Aspiration",
-		url: "https://youtu.be/QxxmHHjAMr4"
+		url: "https://youtu.be/Cf0qFV1SQnE"
 	},
 	{
 		title: "Thorn in You",
-		url: "https://youtu.be/AVwMGElwAWE"
+		url: "https://youtu.be/Fpya3o7sjfQ"
 	},
 	{
 		title: "Vanity Judge",
-		url: "https://youtu.be/_j0GFsvKkJ0"
+		url: "https://youtu.be/wLA_CqxXAHo"
 	},
 	{
 		title: "Woleb Tsap",
-		url: "https://youtu.be/nVu8ROMiY7M"
+		url: "https://youtu.be/j3BnAqZlm7g"
 	},
 	{
 		title: "You of the Light",
-		url: "https://www.youtube.com/watch?v=vDk2N42FBn8&list=PL6akIKaXBeU2Grz-eLgC_o7ddAxfYfGQl&index=129"
+		url: "https://youtu.be/WerjZc8vm6Q"
 	}
 ];
 
 var fatesAblaze = [
 	{
 		title: "A Dark Fall (Fire)",
-		url: "https://youtu.be/mQxUS9Ium24"
+		url: ""
 	},
 	{
 		title: "Alight (Storm)",
-		url: "https://youtu.be/eqvM63tUz2Q"
+		url: ""
 	},
 	{
 		title: "Dark Wastes (Fire)",
-		url: "https://youtu.be/n2Z3oOgP1Fw"
+		url: ""
 	},
 	{
 		title: "Destiny By Blood",
-		url: "https://youtu.be/HBqtbyETvoY"
+		url: "https://youtu.be/MLn_jTYtDuE"
 	},
 	{
 		title: "Dignity of Contest (Roar)",
-		url: "https://youtu.be/IYFI_JrWSEE"
+		url: ""
 	},
 	{
 		title: "Dusk Falls (Fire)",
-		url: "https://youtu.be/QV0vEhQg-iA"
+		url: ""
 	},
 	{
 		title: "Far Away (Deeds)",
-		url: "https://youtu.be/AGokI2L1gwM"
+		url: ""
 	},
 	{
 		title: "Far Dawn (Storm)",
-		url: "https://youtu.be/SPNbEEUVvBg"
+		url: ""
 	},
 	{
 		title: "Glory/Ruin (Deeds)",
-		url: "https://youtu.be/Q1qmTTDtlg4"
+		url: ""
 	},
 	{
 		title: "Guest of Shade",
-		url: "https://youtu.be/I8jH3lZ9YLg"
+		url: ""
 	},
 	{
 		title: "Homesick (Dark)",
-		url: "https://www.youtube.com/watch?v=v_ffupv0Fag&list=PL6akIKaXBeU2Grz-eLgC_o7ddAxfYfGQl&t=31s&index=43"
+		url: ""
 	},
 	{
 		title: "Justice RIP (Storm)",
-		url: "https://youtu.be/ah_n2aYQpVo"
+		url: ""
 	},
 	{
 		title: "Knowledge (Roar)",
-		url: "https://youtu.be/NKdI1Rpj6Ns"
+		url: ""
 	},
 	{
 		title: "Land Below (Flow)",
-		url: "https://youtu.be/IDSMBiouV-o"
+		url: ""
 	},
 	{
 		title: "No Justice (Fire)",
-		url: "https://youtu.be/DYf9RvC7HkQ"
+		url: ""
 	},
 	{
 		title: "Paradise (Dark)",
-		url: "https://youtu.be/JlmBeLoFoCM"
+		url: ""
 	},
 	{
 		title: "Past Below (Flow)",
-		url: "https://youtu.be/sJAksG6wIBA"
+		url: ""
 	},
 	{
 		title: "Past Light (Storm)",
-		url: "https://youtu.be/B-1Qc6uIUII"
+		url: ""
 	},
 	{
 		title: "Prelude to Dispute",
-		url: "https://youtu.be/yectPSgErp0"
+		url: ""
 	},
 	{
 		title: "Quiet Burn (Roar)",
-		url: "https://youtu.be/zkFmXRnIKgU"
+		url: ""
 	},
 	{
 		title: "Raging Dark Winds",
-		url: "https://youtu.be/Rj9OZdHliJc"
+		url: ""
 	},
 	{
 		title: "Resolve (Dark)",
-		url: "https://youtu.be/q1hxqLJ4bpE"
+		url: ""
 	},
 	{
 		title: "Road Taken (Roar)",
-		url: "https://youtu.be/MBmer-5NinI"
+		url: ""
 	},
 	{
 		title: "Rush (Dark)",
-		url: "https://youtu.be/wNjIo-w4XEA"
+		url: ""
 	},
 	{
 		title: "Sea of Aspiration (Flow)",
-		url: "https://youtu.be/aryy8Gqx85c"
+		url: ""
 	},
 	{
 		title: "Thorn in You (Roar)",
-		url: "https://youtu.be/5LCQ3N4a4fg"
+		url: ""
 	},
 	{
 		title: "Vanity Judge (Roar)",
-		url: "https://youtu.be/uglKlZFv55o"
+		url: ""
 	},
 	{
 		title: "Woleb Tsap (Flow)",
-		url: "https://youtu.be/WoQTLzlCeVs"
+		url: ""
 	},
 	{
 		title: "You of the Dark",
-		url: "https://youtu.be/IwtmINMFAGU"
+		url: ""
 	},
 ];
 
