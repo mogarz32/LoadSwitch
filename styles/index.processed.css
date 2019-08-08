@@ -12,6 +12,11 @@
   border: 5px solid red;
 }
 
+.game-logo {
+  display: block;
+  margin: auto;
+}
+
 /*
 .box {
   margin: auto;
