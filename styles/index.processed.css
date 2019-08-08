@@ -251,6 +251,7 @@ form {
 .inner {
   float: left;
   width: 33vw;
+  opacity: .7;
 }
 
 .center {
@@ -259,6 +260,7 @@ form {
   height: 300px;
   text-align: center;
   margin: auto;
+  opacity: .7;
 }
 
 /* Style play button */
