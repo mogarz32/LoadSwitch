@@ -1489,7 +1489,7 @@ function check() {
 
 // Background image changing
 function setBackground(imageURL) {
-	document.getElementsByClassName("container").style.backgroundImage = url(imageURL);
+	document.getElementById("container").style.backgroundImage = url(imageURL);
 }
 
 // Textfield URL video queueing

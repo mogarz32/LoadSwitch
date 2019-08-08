@@ -231,7 +231,7 @@ form {
   color: white;
 }
 
-.container {
+#container {
   text-align: center;
   background-image: url();
   background-size: cover;
