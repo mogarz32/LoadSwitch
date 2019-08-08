@@ -233,7 +233,7 @@ form {
 
 .container {
   text-align: center;
-  background: url("../assets/fates-logo.png") no-repeat;
+  background: url("../assets/fates-logo.png");
   margin: auto;
   width: 100vw;
   box-shadow: 0 4px 8px 0 dimgrey, 0 6px 20px 0 black;
