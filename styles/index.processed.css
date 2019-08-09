@@ -162,7 +162,7 @@
   margin: auto;
   display: block;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 4px;
   background-color: black;
   color: white;
@@ -174,7 +174,7 @@
   margin: auto;
   display: block;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 4px;
   background-color: black;
   color: white;
@@ -182,8 +182,6 @@
 }
 
 .dropdown {
-  border: 2px solid white;
-  border-radius: 4px;
   margin: 0 0 20px 0;
   text-align: center;
 }
