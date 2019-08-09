@@ -312,6 +312,9 @@ form {
 body {
   font-family: Helvetica;
   color: white;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
   background: #000000;
   margin: 0;
   padding: 0;
