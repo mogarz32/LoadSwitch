@@ -17,6 +17,12 @@
   margin: auto;
 }
 
+/* Make page elements opaque on hover */
+form:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
 /*
 .box {
   margin: auto;
