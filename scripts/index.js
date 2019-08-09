@@ -1437,6 +1437,7 @@ function syncPlayers() {
 	} else if(selection < 138) { // Into The Breach - 26 tracks
 		selection = selection - 112;
 		selectedGroup = 8;
+		setBackground("into-the-breach");
 	}
 
 	var linkID = youtube_parser(centerFolders[selectedGroup].folder[selection].url);
