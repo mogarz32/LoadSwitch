@@ -1428,12 +1428,15 @@ function syncPlayers() {
 	} else if(selection < 76) { // The Witcher 3 - 60 tracks
 		selection = selection - 16;
 		selectedGroup = 3;
+		setBackground("witcher-logo");
 	} else if(selection < 87) { // Hearts of Stone - 11 tracks
 		selection = selection - 76;
 		selectedGroup = 4;
+		setBackground("hearts-of-stone-logo");
 	} else if(selection < 112) { // Blood and Wine - 25 tracks
 		selection = selection - 87;
 		selectedGroup = 5;
+		setBackground("blood-and-wine-logo");
 	} else if(selection < 138) { // Into The Breach - 26 tracks
 		selection = selection - 112;
 		selectedGroup = 8;
