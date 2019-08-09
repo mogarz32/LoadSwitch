@@ -194,6 +194,7 @@ h3 {
 
 form {
   transform: translate(0, 13%);
+  border: 1px solid white;
 }
 
 .dualLink {
