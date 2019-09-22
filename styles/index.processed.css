@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-image: url("assets/switcher-banner.png");
+  background-image: url("../assets/switcher-banner.png");
   background-position: center center;
   background-size: cover;
 }
