@@ -3,6 +3,7 @@
 <head>
   <!-- Meta -->
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LoadSwitch</title>
 
   <!-- Browser Tab Icon -->
@@ -12,7 +13,7 @@
   <link rel="stylesheet" href="styles/index.processed.css">
 </head>
 <body>
-  <img width="100%" height="10.67%" src="assets/switcher-banner.png">
+  <img width="100%" height="200px" src="assets/switcher-banner.png">
   
   <div id="container">
     <div class="wrapper">
@@ -27,42 +28,49 @@
             <optgroup label="Darkest Dungeon: Ambient" id="darkestAmbient"></optgroup>
           </select>
         </div>
-        <div id="player1" class="draw">
-        </div>
+        <div id="player1" class="draw"></div>
       </div>
 
       <div class="center">
         <br>
-        <form><input type="url" class="dualLink" id="dualLink" placeholder="Load URL into Both Players" oninput="loadDualVideos()"></form>
+        <form>
+          <input type="url" class="dualLink" id="dualLink" placeholder="Load URL into Both Players" oninput="loadDualVideos()">
+        </form>
+
         <select id="dualVideoList" class="dualList" onchange="syncPlayers()">
-            <option disabled selected value>--Dual Player Loader Dropdown--</option>
-            <optgroup label="Darkest Dungeon" id="darkestSingles"></optgroup>
-            <optgroup label="Darkest Dungeon: The Crimson Court" id="darkestCrimson"></optgroup>
-            <optgroup label="Darkest Dungeon: The Color of Madness" id="darkestColor"></optgroup>
-            <optgroup label="The Witcher 3: Wild Hunt" id="witcher"></optgroup>
-            <optgroup label="The Witcher 3: Hearts of Stone" id="witcherHearts"></optgroup>
-            <optgroup label="The Witcher 3: Blood and Wine" id="witcherBlood"></optgroup>
-            <optgroup label="Attack on Titan" id="attackOnTitan"></optgroup>
-            <optgroup label="World of Warcraft" id="WoW"></optgroup>
-            <optgroup label="Into the Breach" id="intoTheBreach"></optgroup>
-            <optgroup label="Haikyuu" id="haikyuu"></optgroup>
-            <optgroup label="Pokemon" id="pokemon"></optgroup>
-            <optgroup label="My Hero Academia" id="myHero"></optgroup>
-            <optgroup label="Fate/Zero" id="fateZero"></optgroup>
-            <optgroup label="Doom" id="doom"></optgroup>
-            <optgroup label="Naruto" id="naruto"></optgroup>
-            <optgroup label="Journey" id="journey"></optgroup>
-            <optgroup label="Legend of Zelda: The Windwaker" id="windwaker"></optgroup>
-            <optgroup label="Erased" id="erased"></optgroup>
-            <optgroup label="Ambient Sounds" id="ambient"></optgroup>
+          <option disabled selected value>--Dual Player Loader Dropdown--</option>
+          <optgroup label="Darkest Dungeon" id="darkestSingles"></optgroup>
+          <optgroup label="Darkest Dungeon: The Crimson Court" id="darkestCrimson"></optgroup>
+          <optgroup label="Darkest Dungeon: The Color of Madness" id="darkestColor"></optgroup>
+          <optgroup label="The Witcher 3: Wild Hunt" id="witcher"></optgroup>
+          <optgroup label="The Witcher 3: Hearts of Stone" id="witcherHearts"></optgroup>
+          <optgroup label="The Witcher 3: Blood and Wine" id="witcherBlood"></optgroup>
+          <optgroup label="Attack on Titan" id="attackOnTitan"></optgroup>
+          <optgroup label="World of Warcraft" id="WoW"></optgroup>
+          <optgroup label="Into the Breach" id="intoTheBreach"></optgroup>
+          <optgroup label="Haikyuu" id="haikyuu"></optgroup>
+          <optgroup label="Pokemon" id="pokemon"></optgroup>
+          <optgroup label="My Hero Academia" id="myHero"></optgroup>
+          <optgroup label="Fate/Zero" id="fateZero"></optgroup>
+          <optgroup label="Doom" id="doom"></optgroup>
+          <optgroup label="Naruto" id="naruto"></optgroup>
+          <optgroup label="Journey" id="journey"></optgroup>
+          <optgroup label="Legend of Zelda: The Windwaker" id="windwaker"></optgroup>
+          <optgroup label="Erased" id="erased"></optgroup>
+          <optgroup label="Ambient Sounds" id="ambient"></optgroup>
         </select>
-        <img width="200px" height="50px" src="assets/centerLogo.png" class="centerLogo" visibility="hidden">
-        <button title="Play/Pause (or hit 1)" class="play" id="play" onclick="play()"><img src="assets/play-button.png" height=50px width=50px id="img" class="img"></button>
+
+        <button title="Play/Pause (or hit p)" class="play" id="play" onclick="play()">
+          <img src="assets/play-button.png" height=50px width=50px id="img" class="img">
+        </button>
+
         <br>
+
         <label title="Toggle Between Videos (or hit t)" class="switch">
           <input type="checkbox" id="toggle" onclick="check()">
           <span class="slider round"></span>
         </label>
+
         <br>
         <br>
         <div class="volumeContainer">
@@ -89,5 +97,6 @@
   
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
+  <script src="scripts/data.js"></script>
 </body>
 </html>

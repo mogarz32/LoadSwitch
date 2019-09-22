@@ -1,3 +1,11 @@
+body {
+  font-family: Helvetica;
+  color: white;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}
+
 #player1 {
   display: block;
   margin: auto;
@@ -313,14 +321,6 @@ form {
 .img2:hover {
   -webkit-filter: invert(1);
   filter: invert(1);
-}
-
-body {
-  font-family: Helvetica;
-  color: white;
-  background: #000000;
-  margin: 0;
-  padding: 0;
 }
 
 /* The switch - the box around the slider */
