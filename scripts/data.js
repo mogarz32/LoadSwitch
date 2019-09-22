@@ -77,7 +77,7 @@ const centerFolders = [
 ];
 
 // Submenus
-var awakening = [
+const awakening = [
 	{
 		title: "Aggression",
 		url: "https://youtu.be/eRT_xRPp2Zs"
@@ -132,7 +132,7 @@ var awakening = [
 	}
 ];
 
-var awakeningAblaze = [
+const awakeningAblaze = [
 	{
 		title: "Aggression (Galvanized)",
 		url: "https://youtu.be/ZAR-08fCA-0"
@@ -187,7 +187,7 @@ var awakeningAblaze = [
 	}
 ];
 
-var fates = [
+const fates = [
 	{
 		title: "A Dark Fall",
 		url: "https://youtu.be/XF9_4V7eCSg"
@@ -306,7 +306,7 @@ var fates = [
 	}
 ];
 
-var fatesAblaze = [
+const fatesAblaze = [
 	{
 		title: "A Dark Fall (Fire)",
 		url: "https://youtu.be/d8lVbAW78mk"
@@ -425,7 +425,7 @@ var fatesAblaze = [
 	},
 ];
 
-var darkestAmbient = [
+const darkestAmbient = [
 	{
 		title: "Ruins Ambient",
 		url: "https://youtu.be/iX-eKFWXvG4"
@@ -436,7 +436,7 @@ var darkestAmbient = [
 	}
 ];
 
-var darkestTorchless = [
+const darkestTorchless = [
 	{
 		title: "Ruins Torchless",
 		url: "https://youtu.be/XHEnMwm9L8w"
@@ -447,7 +447,7 @@ var darkestTorchless = [
 	}
 ];
 
-var darkestBattle = [
+const darkestBattle = [
 	{
 		title: "Cove Combat",
 		url: "https://youtu.be/8uS2ojmIA_s"
@@ -470,7 +470,7 @@ var darkestBattle = [
 	}
 ];
 
-var darkestAmbush = [
+const darkestAmbush = [
 	{
 		title: "Cove Ambush",
 		url: "https://www.youtube.com/watch?v=vrIm5phJhLA&t=0s&list=PLAIvnH3vcz-yPa_CwaLvyNyZVs8ncGmU3&index=14"
@@ -496,7 +496,7 @@ var darkestAmbush = [
 
 
 // Single Tracks for Center Dropdown
-var darkestSingles = [
+const darkestSingles = [
 	{
 		title: "Main Theme",
 		url: "https://youtu.be/xjnrYyZqm9M"
@@ -539,14 +539,14 @@ var darkestSingles = [
 	}
 ];
 
-var darkestCrimson = [
+const darkestCrimson = [
 	{
 		title: "Bloodletting",
 		url: "https://youtu.be/z6wq0_wpShM"
 	}
 ];
 
-var darkestColor = [
+const darkestColor = [
 	{
 		title: "The Blasted Heath",
 		url: "https://youtu.be/SzJYa9Z15-I"
@@ -569,7 +569,7 @@ var darkestColor = [
 	}
 ];
 
-var witcher = [
+const witcher = [
 	{
 		title: "The Trail",
 		url: "https://youtu.be/A5qyrFTJ9WA"
@@ -595,7 +595,7 @@ var witcher = [
 		url: "https://www.youtube.com/watch?v=vq90Bu23uTo&list=PLgJZQv8L8x5n3czufV4KxXuMTls6HKLxB&t=0s&index=7"
 	},
 	{
-		title: "Emhyr var Emreis",
+		title: "Emhyr const Emreis",
 		url: "https://youtu.be/xL0gDzsjpME"
 	},
 	{
@@ -811,7 +811,8 @@ var witcher = [
 		url: "https://youtu.be/y_pIaVcQrWM"
 	}
 ];
-var witcherHearts = [
+
+const witcherHearts = [
 	{
 		title: "Hearts of Stone",
 		url: "https://youtu.be/8G7xiMlLlCo"
@@ -857,7 +858,8 @@ var witcherHearts = [
 		url: "https://youtu.be/TJyJTn06NZM"
 	}
 ];
-var witcherBlood = [
+
+const witcherBlood = [
 	{
 		title: "Blood and Wine",
 		url: "https://youtu.be/ACajHb72eV0"
@@ -960,10 +962,10 @@ var witcherBlood = [
 	}
 ];
 
-var attackOnTitan = [];
-var WoW = [];
+const attackOnTitan = [];
+const WoW = [];
 
-var intoTheBreach = [
+const intoTheBreach = [
 	{
 		title: "Open a Breach",
 		url: "https://youtu.be/Z6ypNVvwEPM",
@@ -1070,11 +1072,11 @@ var intoTheBreach = [
 	},
 ];
 
-var haikyuu = [];
-var pokemon = [];
-var myHero = [];
-var fateZero = [];
-var journey = [];
-var windwaker = [];
-var naruto = [];
-var erased = [];
+const haikyuu = [];
+const pokemon = [];
+const myHero = [];
+const fateZero = [];
+const journey = [];
+const windwaker = [];
+const naruto = [];
+const erased = [];
