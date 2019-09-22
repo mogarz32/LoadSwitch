@@ -1,81 +1,3 @@
-// Dropdown menus
-const leftFolders = [
-	{
-		name: "Fire Emblem: Awakening",
-		folder: awakening
-	},
-	{
-		name: "Fire Emblem: Fates",
-		folder: fates
-	},
-	{
-		name: "Darkest Dungeon: Full Light Battle",
-		folder: darkestBattle
-	},
-	{
-		name: "Darkest Dungeon: Ambient",
-		folder: darkestAmbient
-	}
-];
-
-const rightFolders = [
-	{
-		name: "Fire Emblem: Awakening",
-		folder: awakeningAblaze
-	},
-	{
-		name: "Fire Emblem: Fates",
-		folder: fatesAblaze
-	},
-	{
-		name: "Darkest Dungeon: Torchless Battle",
-		folder: darkestAmbush
-	},
-	{
-		name: "Darkest Dungeon: Torchless Ambient",
-		folder: darkestTorchless
-	}
-];
-
-const centerFolders = [
-	{
-		name: "Darkest Dungeon",
-		folder: darkestSingles
-	},
-	{
-		name: "Darkest Dungeon: The Crimson Court",
-		folder: darkestCrimson
-	},
-	{
-		name: "Darkest Dungeon: The Color of Madness",
-		folder: darkestColor
-	},
-	{
-		name: "The Witcher 3: Wild Hunt",
-		folder: witcher
-	},
-	{
-		name: "The Witcher 3: Hearts of Stone",
-		folder: witcherHearts
-	},
-	{
-		name: "The Witcher 3: Blood and Wine",
-		folder: witcherBlood
-	},
-	{
-		name: "Attack on Titan",
-		folder: attackOnTitan
-	},
-	{
-		name: "World of Warcraft",
-		folder: WoW
-	},
-	{
-		name: "Into the Breach",
-		folder: intoTheBreach
-	}
-];
-
 // Submenus
 const awakening = [
 	{
@@ -1080,3 +1002,81 @@ const journey = [];
 const windwaker = [];
 const naruto = [];
 const erased = [];
+
+// Dropdown menus
+const leftFolders = [
+	{
+		name: "Fire Emblem: Awakening",
+		folder: awakening
+	},
+	{
+		name: "Fire Emblem: Fates",
+		folder: fates
+	},
+	{
+		name: "Darkest Dungeon: Full Light Battle",
+		folder: darkestBattle
+	},
+	{
+		name: "Darkest Dungeon: Ambient",
+		folder: darkestAmbient
+	}
+];
+
+const rightFolders = [
+	{
+		name: "Fire Emblem: Awakening",
+		folder: awakeningAblaze
+	},
+	{
+		name: "Fire Emblem: Fates",
+		folder: fatesAblaze
+	},
+	{
+		name: "Darkest Dungeon: Torchless Battle",
+		folder: darkestAmbush
+	},
+	{
+		name: "Darkest Dungeon: Torchless Ambient",
+		folder: darkestTorchless
+	}
+];
+
+const centerFolders = [
+	{
+		name: "Darkest Dungeon",
+		folder: darkestSingles
+	},
+	{
+		name: "Darkest Dungeon: The Crimson Court",
+		folder: darkestCrimson
+	},
+	{
+		name: "Darkest Dungeon: The Color of Madness",
+		folder: darkestColor
+	},
+	{
+		name: "The Witcher 3: Wild Hunt",
+		folder: witcher
+	},
+	{
+		name: "The Witcher 3: Hearts of Stone",
+		folder: witcherHearts
+	},
+	{
+		name: "The Witcher 3: Blood and Wine",
+		folder: witcherBlood
+	},
+	{
+		name: "Attack on Titan",
+		folder: attackOnTitan
+	},
+	{
+		name: "World of Warcraft",
+		folder: WoW
+	},
+	{
+		name: "Into the Breach",
+		folder: intoTheBreach
+	}
+];
