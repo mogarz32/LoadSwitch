@@ -1,20 +1,21 @@
 document.onkeydown = function(event) {
-  // p key = play/pause
-  if(event.keyCode == 80) {
+  // p key or space bar = play/pause
+  if(event.keyCode === 80 || event.keyCode === 32) {
+  	event.preventDefault();
     play();
   }
 
   // t key = toggle
-  if(event.keyCode == 84) {
+  if(event.keyCode === 84) {
   	var box = document.getElementById("toggle");
 
-    (box.checked) ? box.checked=false : box.checked=true;
+    (box.checked) ? box.checked = false : box.checked = true;
     check();
     return true;
   }
 
   // left arrow = decrease volume
-  if(event.keyCode == 37) {
+  if(event.keyCode === 37) {
   	var volume = player1.getVolume();
   	document.getElementById("volume").value = volume;
 
@@ -28,7 +29,7 @@ document.onkeydown = function(event) {
   }
   
   // right arrow = increase volume
-  if(event.keyCode == 39) {
+  if(event.keyCode === 39) {
   	var volume = player1.getVolume();
   	document.getElementById("volume").value = volume;
 
@@ -42,6 +43,21 @@ document.onkeydown = function(event) {
   }
 }
 
+document.getElementById("player1").style.visibility = "hidden";
+document.getElementById("player2").style.visibility = "hidden";
+
+function disablePlayBtn() {
+	if(document.getElementById("player1").style.visibility === "hidden" && document.getElementById("player2").style.visibility === "hidden") {
+		document.getElementById("play").disabled = true;
+	}
+}
+
+function enablePlayBtn() {
+	if(document.getElementById("player1").style.visibility !== "hidden" && document.getElementById("player2").style.visibility !== "hidden") {
+		document.getElementById("play").disabled = false;
+	}
+}
+
 // 1. This code loads the IFrame Player API code asynchronously.
 var player1;
 var player2;
@@ -51,13 +67,14 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+
 // 2. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 function onYouTubeIframeAPIReady() {
   player1 = new YT.Player('player1', {
     height: '200',
     width: '356',
-    videoId: '9K9y1cKVMIU',
+    videoId: '',
     playerVars: {
       'loop': 1,
       'controls': 1,
@@ -65,13 +82,15 @@ function onYouTubeIframeAPIReady() {
     },
     events: {
       'onReady': onPlayer1Ready,
-      'onStateChange': onPlayerStateChange
+      'onStateChange': onPlayer1StateChange,
+      'onError': onPlayer1Error
     }
   });
+
   player2 = new YT.Player('player2', {
     height: '200',
     width: '356',
-    videoId: 'XRK3fyYAB4E',
+    videoId: '',
     playerVars: { 
       'loop': 1,
       'controls': 1,
@@ -79,7 +98,8 @@ function onYouTubeIframeAPIReady() {
     },
     events: {
       'onReady': onPlayer2Ready,
-      'onStateChange': onPlayerStateChange
+      'onStateChange': onPlayer2StateChange,
+      'onError': onPlayer2Error
     }
   });
 }
@@ -99,138 +119,36 @@ function onPlayer2Ready(event) {
 }
 
 // 4. Loop video when it ends
-function onPlayerStateChange(event) {
-  if (event.data === YT.PlayerState.ENDED) {
+function onPlayer1StateChange(event) {
+  document.getElementById("player1").style.visibility = "visible";
+  enablePlayBtn();
+
+  if(event.data === YT.PlayerState.ENDED) {
     player1.playVideo();
+  }
+}
+
+function onPlayer2StateChange(event) {
+  document.getElementById("player2").style.visibility = "visible";
+  enablePlayBtn();
+
+  if(event.data === YT.PlayerState.ENDED) {
     player2.playVideo();
   }
 }
 
 
-
-// Populate Left Dropdown Submenus
-var awakeningFolder = document.getElementById("awakening");
-for(var i = 0; i < awakening.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = awakening[i].title;
-	el.value = awakening[i].url;
-	awakeningFolder.appendChild(el);
+// Hide player if cannot load video
+function onPlayer1Error(event) {
+	document.getElementById("toggle").click();
+	disablePlayBtn();
+	document.getElementById("player1").style.visibility = "hidden";
 }
 
-var fatesFolder = document.getElementById("fates");
-for(var i = 0; i < fates.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = fates[i].title;
-	el.value = fates[i].url;
-	fatesFolder.appendChild(el);
-}
-
-var darkestBattleFolder = document.getElementById("darkestBattle");
-for(var i = 0; i < darkestBattle.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestBattle[i].title;
-	el.value = darkestBattle[i].url;
-	darkestBattleFolder.appendChild(el);
-}
-
-var darkestAmbientFolder = document.getElementById("darkestAmbient");
-for(var i = 0; i < darkestAmbient.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestAmbient[i].title;
-	el.value = darkestAmbient[i].url;
-	darkestAmbientFolder.appendChild(el);
-}
-
-// Populate Right Dropdown Submenus
-var awakeningAblazeFolder = document.getElementById("awakeningAblaze");
-for(var i = 0; i < awakeningAblaze.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = awakeningAblaze[i].title;
-	el.value = awakeningAblaze[i].title;
-	awakeningAblazeFolder.appendChild(el);
-}
-
-var fatesAblazeFolder = document.getElementById("fatesAblaze");
-for(var i = 0; i < fatesAblaze.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = fatesAblaze[i].title;
-	el.value = fatesAblaze[i].title;
-	fatesAblazeFolder.appendChild(el);
-}
-
-var darkestAmbushFolder = document.getElementById("darkestAmbush");
-for(var i = 0; i < darkestAmbush.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestAmbush[i].title;
-	el.value = darkestAmbush[i].title;
-	darkestAmbushFolder.appendChild(el);
-}
-
-var darkestTorchlessFolder = document.getElementById("darkestTorchless");
-for(var i = 0; i < darkestTorchless.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestTorchless[i].title;
-	el.value = darkestTorchless[i].url;
-	darkestTorchlessFolder.appendChild(el);
-}
-
-// Populate Center Dropdown Submenus
-var darkestSinglesFolder = document.getElementById("darkestSingles");
-for(var i = 0; i < darkestSingles.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestSingles[i].title;
-	el.value = darkestSingles[i].url;
-	darkestSinglesFolder.appendChild(el);
-}
-
-var darkestCrimsonFolder = document.getElementById("darkestCrimson");
-for(var i = 0; i < darkestCrimson.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestCrimson[i].title;
-	el.value = darkestCrimson[i].url;
-	darkestCrimsonFolder.appendChild(el);
-}
-
-var darkestColorFolder = document.getElementById("darkestColor");
-for(var i = 0; i < darkestColor.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = darkestColor[i].title;
-	el.value = darkestColor[i].url;
-	darkestColorFolder.appendChild(el);
-}
-
-var witcherFolder = document.getElementById("witcher");
-for(var i = 0; i < witcher.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = witcher[i].title;
-	el.value = witcher[i].url;
-	witcherFolder.appendChild(el);
-}
-
-var witcherHeartsFolder = document.getElementById("witcherHearts");
-for(var i = 0; i < witcherHearts.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = witcherHearts[i].title;
-	el.value = witcherHearts[i].url;
-	witcherHeartsFolder.appendChild(el);
-}
-
-var witcherBloodFolder = document.getElementById("witcherBlood");
-for(var i = 0; i < witcherBlood.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = witcherBlood[i].title;
-	el.value = witcherBlood[i].url;
-	witcherBloodFolder.appendChild(el);
-}
-
-// witcher - others here
-
-var intoTheBreachFolder = document.getElementById("intoTheBreach");
-for(var i = 0; i < intoTheBreach.length; i++) {
-	var el = document.createElement("option");
-	el.textContent = intoTheBreach[i].title;
-	el.value = intoTheBreach[i].url;
-	intoTheBreachFolder.appendChild(el);
+function onPlayer2Error(event) {
+	document.getElementById("toggle").click();
+	disablePlayBtn();
+	document.getElementById("player2").style.visibility = "hidden";
 }
 
 // Sync Menu Selections

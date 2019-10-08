@@ -7,10 +7,10 @@ body {
 }
 
 header {
-  height: 150px;
   background-image: url("../assets/switcher-banner.png");
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
+  height: 140px;
 }
 
 #player1 {

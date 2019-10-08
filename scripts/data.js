@@ -1080,3 +1080,128 @@ const centerFolders = [
 		folder: intoTheBreach
 	}
 ];
+
+// Populate Left Dropdown Submenus
+var awakeningFolder = document.getElementById("awakening");
+for(var i = 0; i < awakening.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = awakening[i].title;
+	el.value = awakening[i].url;
+	awakeningFolder.appendChild(el);
+}
+
+var fatesFolder = document.getElementById("fates");
+for(var i = 0; i < fates.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = fates[i].title;
+	el.value = fates[i].url;
+	fatesFolder.appendChild(el);
+}
+
+var darkestBattleFolder = document.getElementById("darkestBattle");
+for(var i = 0; i < darkestBattle.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestBattle[i].title;
+	el.value = darkestBattle[i].url;
+	darkestBattleFolder.appendChild(el);
+}
+
+var darkestAmbientFolder = document.getElementById("darkestAmbient");
+for(var i = 0; i < darkestAmbient.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestAmbient[i].title;
+	el.value = darkestAmbient[i].url;
+	darkestAmbientFolder.appendChild(el);
+}
+
+// Populate Right Dropdown Submenus
+var awakeningAblazeFolder = document.getElementById("awakeningAblaze");
+for(var i = 0; i < awakeningAblaze.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = awakeningAblaze[i].title;
+	el.value = awakeningAblaze[i].title;
+	awakeningAblazeFolder.appendChild(el);
+}
+
+var fatesAblazeFolder = document.getElementById("fatesAblaze");
+for(var i = 0; i < fatesAblaze.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = fatesAblaze[i].title;
+	el.value = fatesAblaze[i].title;
+	fatesAblazeFolder.appendChild(el);
+}
+
+var darkestAmbushFolder = document.getElementById("darkestAmbush");
+for(var i = 0; i < darkestAmbush.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestAmbush[i].title;
+	el.value = darkestAmbush[i].title;
+	darkestAmbushFolder.appendChild(el);
+}
+
+var darkestTorchlessFolder = document.getElementById("darkestTorchless");
+for(var i = 0; i < darkestTorchless.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestTorchless[i].title;
+	el.value = darkestTorchless[i].url;
+	darkestTorchlessFolder.appendChild(el);
+}
+
+// Populate Center Dropdown Submenus
+var darkestSinglesFolder = document.getElementById("darkestSingles");
+for(var i = 0; i < darkestSingles.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestSingles[i].title;
+	el.value = darkestSingles[i].url;
+	darkestSinglesFolder.appendChild(el);
+}
+
+var darkestCrimsonFolder = document.getElementById("darkestCrimson");
+for(var i = 0; i < darkestCrimson.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestCrimson[i].title;
+	el.value = darkestCrimson[i].url;
+	darkestCrimsonFolder.appendChild(el);
+}
+
+var darkestColorFolder = document.getElementById("darkestColor");
+for(var i = 0; i < darkestColor.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = darkestColor[i].title;
+	el.value = darkestColor[i].url;
+	darkestColorFolder.appendChild(el);
+}
+
+var witcherFolder = document.getElementById("witcher");
+for(var i = 0; i < witcher.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = witcher[i].title;
+	el.value = witcher[i].url;
+	witcherFolder.appendChild(el);
+}
+
+var witcherHeartsFolder = document.getElementById("witcherHearts");
+for(var i = 0; i < witcherHearts.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = witcherHearts[i].title;
+	el.value = witcherHearts[i].url;
+	witcherHeartsFolder.appendChild(el);
+}
+
+var witcherBloodFolder = document.getElementById("witcherBlood");
+for(var i = 0; i < witcherBlood.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = witcherBlood[i].title;
+	el.value = witcherBlood[i].url;
+	witcherBloodFolder.appendChild(el);
+}
+
+// witcher - others here
+
+var intoTheBreachFolder = document.getElementById("intoTheBreach");
+for(var i = 0; i < intoTheBreach.length; i++) {
+	var el = document.createElement("option");
+	el.textContent = intoTheBreach[i].title;
+	el.value = intoTheBreach[i].url;
+	intoTheBreachFolder.appendChild(el);
+}
